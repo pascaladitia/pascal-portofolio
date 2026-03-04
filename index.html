@@ -18,7 +18,7 @@
     <li><a href="#about">About</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
-  <a href="mailto:pascaladitia@gmail.com" class="nav-cta">Hire Me</a>
+  <a href="/cdn-cgi/l/email-protection#7a0a1b09191b161b1e130e131b3a1d171b131654191517" class="nav-cta">Hire Me</a>
 </nav>
 
 <!-- ── HERO ── -->
@@ -364,11 +364,11 @@
         <h2 class="sec-h2">Let's build <em>something great.</em></h2>
         <p>Open to freelance, full-time roles, and exciting collaborations. Building a mobile product that needs KMP expertise? Let's talk.</p>
         <div class="contact-links">
-          <a href="mailto:pascaladitia@gmail.com" class="c-link">
+          <a href="/cdn-cgi/l/email-protection#0f7f6e7c6c6e636e6b667b666e4f68626e6663216c6062" class="c-link">
             <div class="c-ico">
               <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
             </div>
-            <div><span>Email</span><strong>pascaladitia@gmail.com</strong></div>
+            <div><span>Email</span><strong><span class="__cf_email__" data-cfemail="1f6f7e6c7c7e737e7b766b767e5f78727e7673317c7072">[email&#160;protected]</span></strong></div>
           </a>
           <a href="https://github.com/pascaladitia" target="_blank" class="c-link">
             <div class="c-ico">
@@ -468,7 +468,6 @@ window.addEventListener('scroll', () => {
 
 /* ── PROJECT MODAL ── */
 const modal   = document.getElementById('modal');
-const mClose  = document.getElementById('modal-close');
 const mThumb  = document.getElementById('modal-thumb');
 const mMeta   = document.getElementById('modal-media-meta');
 const mBadge  = document.getElementById('modal-badge');
@@ -480,39 +479,37 @@ const mFooter = document.getElementById('modal-footer-actions');
 function openModal(el) {
   const d = el.dataset;
 
-  /* badge */
+  // badge — note: data-badge-class in HTML becomes d['badge-class'] NOT d.badgeClass
+  const badgeClass = el.getAttribute('data-badge-class') || '';
   mBadge.textContent = d.badge || '';
-  mBadge.className = 'modal-badge ' + (d.badgeClass || '');
+  mBadge.className = 'modal-badge ' + badgeClass;
 
-  /* title */
   mTitle.textContent = d.title || '';
+  mDesc.innerHTML    = d.desc  || '';
+  mMeta.textContent  = d.title || '';
 
-  /* description */
-  mDesc.innerHTML = d.desc || '';
-
-  /* thumbnail: check if there's an img inside pc-thumb / pf-thumb */
-  const imgEl = el.querySelector('img');
+  // thumbnail
+  const imgEl = el.querySelector('.pc-thumb img, .pf-thumb img');
   mThumb.innerHTML = '';
   if (imgEl) {
-    const clone = imgEl.cloneNode();
-    clone.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:0;';
+    const clone = document.createElement('img');
+    clone.src   = imgEl.src;
+    clone.alt   = imgEl.alt;
+    clone.style.cssText = 'width:100%;height:100%;object-fit:cover;';
     mThumb.appendChild(clone);
   } else {
-    const emoji = d.emoji || '📱';
-    mThumb.innerHTML = `<div class="modal-thumb-ph">${emoji}</div>`;
+    mThumb.innerHTML = `<div class="modal-thumb-ph">${d.emoji || '📱'}</div>`;
   }
 
-  /* meta label under image */
-  mMeta.textContent = d.title || '';
-
-  /* tech pills */
+  // tech pills
   const techs = (d.tech || '').split(',').map(t => t.trim()).filter(Boolean);
   mTech.innerHTML = techs.map(t => `<span>${t}</span>`).join('');
 
-  /* footer actions */
+  // footer buttons
   let acts = '';
   if (d.link) {
-    acts += `<a href="${d.link}" target="_blank" class="modal-btn-store">${d.linkLabel || 'View on Play Store'} ↗</a>`;
+    const label = el.getAttribute('data-link-label') || 'View on Play Store';
+    acts += `<a href="${d.link}" target="_blank" class="modal-btn-store">${label} ↗</a>`;
   }
   acts += `<button class="modal-btn-close-foot" onclick="closeModal()">Close</button>`;
   mFooter.innerHTML = acts;
@@ -526,7 +523,7 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-/* attach to all clickable cards / buttons */
+// "View Details" buttons
 document.querySelectorAll('.proj-detail-btn').forEach(btn => {
   btn.addEventListener('click', e => {
     e.stopPropagation();
@@ -535,7 +532,7 @@ document.querySelectorAll('.proj-detail-btn').forEach(btn => {
   });
 });
 
-/* also clicking the card thumb opens modal */
+// clicking the thumbnail also opens the modal
 document.querySelectorAll('.pc-thumb, .pf-thumb').forEach(thumb => {
   thumb.style.cursor = 'pointer';
   thumb.addEventListener('click', () => {
@@ -544,7 +541,8 @@ document.querySelectorAll('.pc-thumb, .pf-thumb').forEach(thumb => {
   });
 });
 
-mClose.addEventListener('click', closeModal);
+// close on backdrop click or Escape key
+document.getElementById('modal-close').addEventListener('click', closeModal);
 modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
