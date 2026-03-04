@@ -134,10 +134,8 @@
           <span>Kotlin</span><span>Jetpack Compose</span><span>Firebase</span><span>MVVM</span><span>Hilt</span>
         </div>
         <div class="proj-actions">
-          <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun" target="_blank" class="proj-cta" onclick="event.stopPropagation()">
-            View on Play Store
-            <svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+          <button class="proj-detail-btn">View Details →</button>
+          <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun" target="_blank" class="proj-store-link">Play Store ↗</a>
         </div>
       </div>
     </div>
@@ -161,6 +159,7 @@
           <h3>Digiroom</h3>
           <p>Automotive spare parts marketplace with workshop booking, cart &amp; full payment flow.</p>
           <div class="proj-tech"><span>Kotlin</span><span>Clean Arch</span><span>Retrofit</span><span>Room</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -180,6 +179,7 @@
           <h3>Omnichat</h3>
           <p>Real-time omnichannel customer service via WebSocket. Multi-agent live sessions.</p>
           <div class="proj-tech"><span>WebSocket</span><span>Coroutines</span><span>Hilt</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -199,6 +199,7 @@
           <h3>Jari AI</h3>
           <p>AI-powered OCR enterprise solution. Recognizes and classifies documents with ML Kit.</p>
           <div class="proj-tech"><span>ML Kit</span><span>CameraX</span><span>Koin</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -220,7 +221,7 @@
           <h3>Jari Collection</h3>
           <p>Collector management with live GPS tracking and financial reporting dashboards.</p>
           <div class="proj-tech"><span>Maps SDK</span><span>Location</span><span>Room</span></div>
-          <a href="https://play.google.com/store/apps/details?id=id.co.jari.collection.true" target="_blank" class="card-store-btn" onclick="event.stopPropagation()">View on Play Store ↗</a>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -240,6 +241,7 @@
           <h3>Bankaltimtara SMS</h3>
           <p>Secure SMS banking for fund transfers, balance inquiries and account mutations.</p>
           <div class="proj-tech"><span>Android</span><span>Security</span><span>Biometric</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -259,6 +261,7 @@
           <h3>Mobile Payslip</h3>
           <p>Employee management with payroll processing, PDF export and leave management.</p>
           <div class="proj-tech"><span>Kotlin</span><span>Retrofit</span><span>PDF Export</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -278,6 +281,7 @@
           <h3>Saleskit BCA Finance</h3>
           <p>Enterprise sales support for financial services. Offline-first with background sync.</p>
           <div class="proj-tech"><span>WorkManager</span><span>Room</span><span>Clean Arch</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -297,6 +301,7 @@
           <h3>Dip House Keeping</h3>
           <p>Hotel reservation system with PMS &amp; POS integration. Bluetooth printing support.</p>
           <div class="proj-tech"><span>Android</span><span>POS Integration</span><span>Bluetooth</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -412,27 +417,23 @@
 ═══════════════════════════════ -->
 <div id="modal" class="modal-backdrop" aria-hidden="true">
   <div class="modal-box" role="dialog" aria-modal="true">
-
-    <!-- close button — floats over image -->
     <button class="modal-close" id="modal-close" aria-label="Close">
-      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
 
-    <!-- scrollable container -->
-    <div class="modal-scroll">
-
-      <!-- TOP: full-width landscape image -->
-      <div class="modal-img-wrap" id="modal-thumb">
-        <!-- filled by JS -->
+    <div class="modal-inner">
+      <!-- image / preview side -->
+      <div class="modal-media" id="modal-media">
+        <div class="modal-thumb" id="modal-thumb">
+          <!-- filled by JS -->
+        </div>
+        <div class="modal-media-meta" id="modal-media-meta"></div>
       </div>
 
-      <!-- BOTTOM: info -->
+      <!-- info side -->
       <div class="modal-info">
-        <div class="modal-info-top">
-          <span class="modal-badge" id="modal-badge"></span>
-          <h2 class="modal-title" id="modal-title"></h2>
-        </div>
-
+        <span class="modal-badge" id="modal-badge"></span>
+        <h2 class="modal-title" id="modal-title"></h2>
         <p class="modal-desc" id="modal-desc"></p>
 
         <div class="modal-section-label">Tech Stack</div>
@@ -440,7 +441,6 @@
 
         <div class="modal-footer-actions" id="modal-footer-actions"></div>
       </div>
-
     </div>
   </div>
 </div>
@@ -523,16 +523,20 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
+// "View Details" buttons — stop propagation so card click doesn't double-fire
+document.querySelectorAll('.proj-detail-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const card = btn.closest('[data-title]');
+    if (card) openModal(card);
+  });
+});
+
 // clicking ANYWHERE on a card opens the modal
 document.querySelectorAll('.proj-card, .proj-featured').forEach(card => {
   card.addEventListener('click', () => {
     if (card.hasAttribute('data-title')) openModal(card);
   });
-});
-
-// play store links inside cards should NOT trigger the modal
-document.querySelectorAll('.card-store-btn, .proj-cta').forEach(link => {
-  link.addEventListener('click', e => e.stopPropagation());
 });
 
 // close on backdrop click or Escape key
