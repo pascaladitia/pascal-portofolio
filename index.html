@@ -1,567 +1,614 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pascal Aditia Muclis — Senior Android & KMP Developer</title>
-  <meta name="description" content="Senior Android & Kotlin Multiplatform Developer. 4+ years building production-grade apps for Android and iOS.">
-  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Senior Android & Kotlin Multiplatform Developer. 4+ years building production apps for Android and iOS." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <!-- ── HEADER ── -->
-  <header id="header">
-    <div class="logo">Pascal <em>Aditia</em> Muclis</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#stack">Stack</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<!-- ════════════════════════════════
+     NAVIGATION
+════════════════════════════════ -->
+<header class="nav" id="nav">
+  <div class="nav-logo">Pascal <span>Aditia</span> Muclis</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#stack">Stack</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
 
-  <!-- ── HERO ── -->
-  <section class="hero" id="home">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <div class="hero-eyebrow">Open to opportunities</div>
+<!-- ════════════════════════════════
+     HERO
+════════════════════════════════ -->
+<section class="hero" id="home">
+  <div class="hero-glow"></div>
+  <div class="hero-glow-2"></div>
 
-        <h1 class="hero-name">
-          Senior Mobile<br>
-          <span class="line2">Developer</span>
-        </h1>
+  <div class="hero-content">
+    <div>
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Open to opportunities
+      </div>
 
-        <p class="hero-role">
-          Building production-grade Android &amp; iOS applications with
-          Kotlin Multiplatform. 4+ years shipping apps that scale.
+      <h1 class="hero-h1">
+        Senior Mobile<br>
+        <i>Developer</i>
+      </h1>
+
+      <p class="hero-sub">
+        Building production-grade Android &amp; iOS apps with
+        Kotlin Multiplatform. 4+ years shipping apps that scale.
+      </p>
+
+      <div class="hero-btns">
+        <a href="#projects" class="btn-gold">View Projects &rarr;</a>
+        <a href="#contact" class="btn-plain">Let&rsquo;s Talk &rarr;</a>
+      </div>
+    </div>
+
+    <div class="hero-stats">
+      <div>
+        <div class="hero-stat-num">4<em>+</em></div>
+        <div class="hero-stat-lbl">Years Exp.</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">9<em>+</em></div>
+        <div class="hero-stat-lbl">Apps Shipped</div>
+      </div>
+      <div>
+        <div class="hero-stat-num">2</div>
+        <div class="hero-stat-lbl">Platforms</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-hint">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════
+     ABOUT
+════════════════════════════════ -->
+<section class="sec sec-alt" id="about">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">01 / About</div>
+    <h2 class="sec-title">Crafting mobile experiences<br><em>that just work.</em></h2>
+
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>
+          I'm a <strong>Senior Android Developer</strong> based in Jakarta, Indonesia,
+          with 4+ years delivering scalable, production-ready applications.
+          My primary focus is <strong>Kotlin Multiplatform (KMP)</strong> — writing
+          shared business logic once and deploying native experiences on both Android and iOS.
+        </p>
+        <p>
+          I build with <strong>Clean Architecture and MVVM</strong>, keeping codebases
+          testable, maintainable, and easy to evolve. I've shipped across fintech,
+          media, enterprise, and hospitality — from real-time WebSocket platforms
+          to AI-powered OCR and banking systems.
+        </p>
+        <p>
+          When not coding, I explore Compose Multiplatform,
+          fine-tune CI/CD pipelines, and stay close to the Android ecosystem.
+        </p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card reveal d1">
+          <div class="about-card-icon">🏗️</div>
+          <div class="about-card-text">
+            <strong>Clean Architecture</strong>
+            <span>MVVM &middot; Repository Pattern &middot; Use Cases</span>
+          </div>
+        </div>
+        <div class="about-card reveal d2">
+          <div class="about-card-icon">🔗</div>
+          <div class="about-card-text">
+            <strong>Kotlin Multiplatform</strong>
+            <span>Shared logic &middot; Compose Multiplatform</span>
+          </div>
+        </div>
+        <div class="about-card reveal d3">
+          <div class="about-card-icon">⚙️</div>
+          <div class="about-card-text">
+            <strong>CI/CD &amp; DevOps</strong>
+            <span>Fastlane &middot; GitHub Actions &middot; Firebase Distribution</span>
+          </div>
+        </div>
+        <div class="about-card reveal d4">
+          <div class="about-card-icon">📍</div>
+          <div class="about-card-text">
+            <strong>Jakarta, Indonesia</strong>
+            <span>Remote-friendly &middot; Open to relocation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════
+     TECH STACK
+════════════════════════════════ -->
+<section class="sec" id="stack">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">02 / Tech Stack</div>
+    <h2 class="sec-title">Tools I <em>ship with.</em></h2>
+
+    <div class="platforms reveal">
+      <div class="platform">
+        <div class="platform-emoji">🤖</div>
+        <div class="platform-text">
+          <strong>Android</strong>
+          <span>4+ years · Production apps</span>
+        </div>
+      </div>
+      <div class="platform">
+        <div class="platform-emoji">🍎</div>
+        <div class="platform-text">
+          <strong>iOS</strong>
+          <span>via Kotlin Multiplatform</span>
+        </div>
+      </div>
+      <div class="platform">
+        <div class="platform-emoji">🔗</div>
+        <div class="platform-text">
+          <strong>KMP</strong>
+          <span>Shared business logic</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stack-groups">
+      <div class="reveal">
+        <div class="stack-group-label">Language &amp; Core</div>
+        <div class="pills">
+          <span class="pill">Kotlin</span>
+          <span class="pill">Kotlin Multiplatform</span>
+          <span class="pill">Coroutines</span>
+          <span class="pill">Flow</span>
+          <span class="pill">Swift (interop)</span>
+        </div>
+      </div>
+
+      <div class="reveal d1">
+        <div class="stack-group-label">UI &amp; Compose</div>
+        <div class="pills">
+          <span class="pill">Jetpack Compose</span>
+          <span class="pill">Compose Multiplatform</span>
+          <span class="pill">Material 3</span>
+          <span class="pill">XML Layouts</span>
+          <span class="pill">Animations</span>
+        </div>
+      </div>
+
+      <div class="reveal d2">
+        <div class="stack-group-label">Architecture &amp; DI</div>
+        <div class="pills">
+          <span class="pill">Clean Architecture</span>
+          <span class="pill">MVVM</span>
+          <span class="pill">Hilt</span>
+          <span class="pill">Koin</span>
+          <span class="pill">Repository Pattern</span>
+          <span class="pill">Use Cases</span>
+        </div>
+      </div>
+
+      <div class="reveal d3">
+        <div class="stack-group-label">Networking &amp; Data</div>
+        <div class="pills">
+          <span class="pill">Retrofit</span>
+          <span class="pill">Ktor</span>
+          <span class="pill">WebSocket</span>
+          <span class="pill">Room</span>
+          <span class="pill">SQLDelight</span>
+          <span class="pill">DataStore</span>
+          <span class="pill">Firebase</span>
+        </div>
+      </div>
+
+      <div class="reveal d4">
+        <div class="stack-group-label">DevOps &amp; Tooling</div>
+        <div class="pills">
+          <span class="pill">CI/CD Pipelines</span>
+          <span class="pill">GitHub Actions</span>
+          <span class="pill">Fastlane</span>
+          <span class="pill">Firebase App Distribution</span>
+          <span class="pill">Play Store Deployment</span>
+          <span class="pill">ProGuard / R8</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════
+     PROJECTS
+════════════════════════════════ -->
+<section class="sec sec-alt" id="projects">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">03 / Projects</div>
+    <h2 class="sec-title">Selected <em>work.</em></h2>
+
+    <div class="projects-grid">
+
+      <!-- TribunX -->
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <!--
+            CARA PAKAI GAMBAR:
+            Ganti <div class="proj-thumb-placeholder">📰</div>
+            dengan <img src="assets/tribunx.jpg" alt="TribunX">
+          -->
+          <div class="proj-thumb-placeholder">📰</div>
+          <span class="proj-badge b-android">Android</span>
+        </div>
+        <div class="proj-body">
+          <h3>TribunX</h3>
+          <p>News &amp; social media platform with posts, comments and video. Firebase real-time sync, Compose UI.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Kotlin</span>
+            <span class="proj-tag">Compose</span>
+            <span class="proj-tag">Firebase</span>
+            <span class="proj-tag">MVVM</span>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun" target="_blank" class="proj-link">Play Store &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Digiroom -->
+      <div class="proj-card reveal d1">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">🔧</div>
+          <!-- <img src="assets/digiroom.jpg" alt="Digiroom"> -->
+          <span class="proj-badge b-android">Android</span>
+        </div>
+        <div class="proj-body">
+          <h3>Digiroom</h3>
+          <p>Automotive spare parts marketplace with workshop booking, cart &amp; payment flows.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Kotlin</span>
+            <span class="proj-tag">Clean Arch</span>
+            <span class="proj-tag">Retrofit</span>
+            <span class="proj-tag">Room</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Omnichat -->
+      <div class="proj-card reveal d2">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">💬</div>
+          <!-- <img src="assets/omnichat.jpg" alt="Omnichat"> -->
+          <span class="proj-badge b-rt">Real-time</span>
+        </div>
+        <div class="proj-body">
+          <h3>Omnichat</h3>
+          <p>Omnichannel customer service platform powered by WebSocket for live messaging.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">WebSocket</span>
+            <span class="proj-tag">Coroutines</span>
+            <span class="proj-tag">Hilt</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jari AI -->
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">🤖</div>
+          <!-- <img src="assets/jariai.jpg" alt="Jari AI"> -->
+          <span class="proj-badge b-enter">Enterprise</span>
+        </div>
+        <div class="proj-body">
+          <h3>Jari AI</h3>
+          <p>AI-powered OCR enterprise solution for intelligent document recognition at scale.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">ML Kit</span>
+            <span class="proj-tag">CameraX</span>
+            <span class="proj-tag">Koin</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Jari Collection -->
+      <div class="proj-card reveal d1">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">📍</div>
+          <!-- <img src="assets/jaricollection.jpg" alt="Jari Collection"> -->
+          <span class="proj-badge b-enter">Enterprise</span>
+        </div>
+        <div class="proj-body">
+          <h3>Jari Collection</h3>
+          <p>Collector management with live GPS tracking and financial reporting dashboards.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Maps SDK</span>
+            <span class="proj-tag">Location</span>
+            <span class="proj-tag">Room</span>
+          </div>
+          <a href="https://play.google.com/store/apps/details?id=id.co.jari.collection.true" target="_blank" class="proj-link">Play Store &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Bankaltimtara -->
+      <div class="proj-card reveal d2">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">🏦</div>
+          <!-- <img src="assets/bankaltim.jpg" alt="Bankaltimtara SMS"> -->
+          <span class="proj-badge b-bank">Banking</span>
+        </div>
+        <div class="proj-body">
+          <h3>Bankaltimtara SMS</h3>
+          <p>Secure SMS banking for fund transfers, balance inquiries, and account mutation.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Android</span>
+            <span class="proj-tag">Security</span>
+            <span class="proj-tag">Biometric</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Payslip -->
+      <div class="proj-card reveal">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">💼</div>
+          <!-- <img src="assets/payslip.jpg" alt="Mobile Payslip"> -->
+          <span class="proj-badge b-enter">Enterprise</span>
+        </div>
+        <div class="proj-body">
+          <h3>Mobile Payslip</h3>
+          <p>Employee management app with full payroll processing and leave management system.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Kotlin</span>
+            <span class="proj-tag">Retrofit</span>
+            <span class="proj-tag">PDF</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saleskit BCA -->
+      <div class="proj-card reveal d1">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">📊</div>
+          <!-- <img src="assets/saleskit.jpg" alt="Saleskit BCA Finance"> -->
+          <span class="proj-badge b-enter">Enterprise</span>
+        </div>
+        <div class="proj-body">
+          <h3>Saleskit BCA Finance</h3>
+          <p>Enterprise sales support for financial services. Offline-first with background sync.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">WorkManager</span>
+            <span class="proj-tag">Room</span>
+            <span class="proj-tag">Clean Arch</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dip Housekeeping -->
+      <div class="proj-card reveal d2">
+        <div class="proj-thumb">
+          <div class="proj-thumb-placeholder">🏨</div>
+          <!-- <img src="assets/housekeeping.jpg" alt="Dip House Keeping"> -->
+          <span class="proj-badge b-enter">Enterprise</span>
+        </div>
+        <div class="proj-body">
+          <h3>Dip House Keeping</h3>
+          <p>Hotel reservation system integrated with PMS &amp; POS, real-time room status.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">Android</span>
+            <span class="proj-tag">POS Integration</span>
+            <span class="proj-tag">Bluetooth</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════
+     EXPERIENCE
+════════════════════════════════ -->
+<section class="sec" id="experience">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">04 / Experience</div>
+    <h2 class="sec-title">Career <em>timeline.</em></h2>
+
+    <div class="timeline">
+
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2023 — Present</div>
+        <div class="tl-role">Senior Android Developer</div>
+        <div class="tl-company">Full-time &middot; Jakarta, Indonesia</div>
+        <div class="tl-desc">
+          Leading mobile architecture decisions and adopting Kotlin Multiplatform
+          for shared logic across Android and iOS. Mentoring junior developers,
+          conducting code reviews, and owning CI/CD pipelines for production releases.
+        </div>
+        <div class="tl-chips">
+          <span class="tl-chip">KMP</span>
+          <span class="tl-chip">Compose</span>
+          <span class="tl-chip">Hilt</span>
+          <span class="tl-chip">CI/CD</span>
+          <span class="tl-chip">Clean Architecture</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal d1">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2021 — 2023</div>
+        <div class="tl-role">Android Developer</div>
+        <div class="tl-company">Contract &middot; Multiple Clients</div>
+        <div class="tl-desc">
+          Shipped multiple Android apps across fintech, media and enterprise.
+          Integrated real-time WebSocket communication, RESTful APIs, Firebase,
+          and third-party SDKs on tight delivery schedules.
+        </div>
+        <div class="tl-chips">
+          <span class="tl-chip">Kotlin</span>
+          <span class="tl-chip">MVVM</span>
+          <span class="tl-chip">Retrofit</span>
+          <span class="tl-chip">Firebase</span>
+          <span class="tl-chip">Room</span>
+        </div>
+      </div>
+
+      <div class="tl-item reveal d2">
+        <div class="tl-dot"></div>
+        <div class="tl-year">2020 — 2021</div>
+        <div class="tl-role">Junior Android Developer</div>
+        <div class="tl-company">Entry level</div>
+        <div class="tl-desc">
+          Started my mobile career building Android applications, mastering
+          Kotlin fundamentals, architecture patterns and the Android SDK.
+        </div>
+        <div class="tl-chips">
+          <span class="tl-chip">Java → Kotlin</span>
+          <span class="tl-chip">XML Layouts</span>
+          <span class="tl-chip">Android SDK</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ════════════════════════════════
+     CONTACT
+════════════════════════════════ -->
+<section class="sec sec-alt" id="contact">
+  <div class="sec-inner">
+    <div class="sec-eyebrow">05 / Contact</div>
+    <h2 class="sec-title">Let&rsquo;s build something <em>great.</em></h2>
+
+    <div class="contact-grid">
+
+      <div>
+        <p class="contact-intro reveal">
+          Open to freelance projects, full-time roles and interesting collaborations.
+          Building a mobile product that needs solid architecture and KMP expertise?
+          I'd love to hear from you.
         </p>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn-outline">View Projects &rarr;</a>
-          <a href="#contact" class="btn-text">Let's Talk &rarr;</a>
+        <div class="c-links">
+          <a href="mailto:pascaladitia@gmail.com" class="c-link reveal d1">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
+            <div>
+              <span class="c-label">Email</span>
+              <span class="c-val">pascaladitia@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/pascaladitia" target="_blank" class="c-link reveal d2">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+            </div>
+            <div>
+              <span class="c-label">GitHub</span>
+              <span class="c-val">github.com/pascaladitia</span>
+            </div>
+          </a>
+
+          <a href="https://linkedin.com/in/pascal-aditia-muclis" target="_blank" class="c-link reveal d3">
+            <div class="c-icon">
+              <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+            </div>
+            <div>
+              <span class="c-label">LinkedIn</span>
+              <span class="c-val">pascal-aditia-muclis</span>
+            </div>
+          </a>
         </div>
       </div>
 
-      <div class="hero-aside">
-        <div class="stat-block">
-          <div class="stat-n">4<em>+</em></div>
-          <div class="stat-l">Years</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-n">9<em>+</em></div>
-          <div class="stat-l">Apps Shipped</div>
-        </div>
-        <div class="stat-block">
-          <div class="stat-n">2</div>
-          <div class="stat-l">Platforms</div>
-        </div>
-      </div>
-    </div>
-
-    <div class="hero-scroll">
-      <div class="scroll-bar"></div>
-      <span>Scroll</span>
-    </div>
-  </section>
-
-  <div class="s-divider"></div>
-
-  <!-- ── ABOUT ── -->
-  <div id="about" style="background:var(--bg2);">
-    <div class="section">
-      <div class="s-label">01 <span>/ About</span></div>
-      <h2 class="s-title">Crafting mobile experiences<br><em>that just work.</em></h2>
-
-      <div class="about-wrap">
-        <div class="about-text reveal">
-          <p>
-            I'm a <strong>Senior Android Developer</strong> based in Indonesia,
-            with 4+ years of experience delivering scalable, production-ready applications.
-            My primary focus is <strong>Kotlin Multiplatform (KMP)</strong> — writing
-            shared business logic once and deploying native experiences across Android and iOS.
-          </p>
-          <p>
-            I architect with <strong>Clean Architecture and MVVM</strong>, keeping codebases
-            testable, maintainable, and ready to evolve as products grow. I've shipped
-            across fintech, media, enterprise, and hospitality — from real-time WebSocket
-            platforms to OCR-powered document recognition.
-          </p>
-          <p>
-            Away from the keyboard I explore Compose Multiplatform, contribute to
-            architecture discussions, and stay close to the Android ecosystem.
-          </p>
-        </div>
-
-        <div class="about-aside">
-          <div class="info-row reveal d1">
-            <div class="info-icon">🏗️</div>
-            <div class="info-body">
-              <strong>Architecture</strong>
-              <span>Clean · MVVM · Repository Pattern</span>
-            </div>
-          </div>
-          <div class="info-row reveal d2">
-            <div class="info-icon">🔗</div>
-            <div class="info-body">
-              <strong>Kotlin Multiplatform</strong>
-              <span>Shared logic · Compose Multiplatform</span>
-            </div>
-          </div>
-          <div class="info-row reveal d3">
-            <div class="info-icon">⚙️</div>
-            <div class="info-body">
-              <strong>CI/CD &amp; DevOps</strong>
-              <span>Fastlane · GitHub Actions · Firebase Distribution</span>
-            </div>
-          </div>
-          <div class="info-row reveal d4">
-            <div class="info-icon">📍</div>
-            <div class="info-body">
-              <strong>Jakarta, Indonesia</strong>
-              <span>Remote-friendly · Open to relocation</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="s-divider"></div>
-
-  <!-- ── STACK ── -->
-  <section id="stack">
-    <div class="section">
-      <div class="s-label">02 <span>/ Tech Stack</span></div>
-      <h2 class="s-title">Tools I <em>ship with.</em></h2>
-
-      <div class="platform-row reveal">
-        <div class="platform-card">
-          <div class="p-icon">🤖</div>
-          <div class="p-info">
-            <strong>Android</strong>
-            <span>4+ years · Production apps</span>
-          </div>
-        </div>
-        <div class="platform-card">
-          <div class="p-icon">🍎</div>
-          <div class="p-info">
-            <strong>iOS</strong>
-            <span>via Kotlin Multiplatform</span>
-          </div>
-        </div>
-        <div class="platform-card">
-          <div class="p-icon">🔗</div>
-          <div class="p-info">
-            <strong>KMP</strong>
-            <span>Shared business logic</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="stack-wrap">
-        <div class="stack-group reveal">
-          <div class="stack-g-label">Language &amp; Core</div>
-          <div class="pills">
-            <span class="pill">Kotlin</span>
-            <span class="pill">Kotlin Multiplatform</span>
-            <span class="pill">Coroutines</span>
-            <span class="pill">Flow</span>
-            <span class="pill">Swift (interop)</span>
-          </div>
-        </div>
-
-        <div class="stack-group reveal d1">
-          <div class="stack-g-label">UI &amp; Compose</div>
-          <div class="pills">
-            <span class="pill">Jetpack Compose</span>
-            <span class="pill">Compose Multiplatform</span>
-            <span class="pill">Material 3</span>
-            <span class="pill">XML Layouts</span>
-            <span class="pill">Animations</span>
-          </div>
-        </div>
-
-        <div class="stack-group reveal d2">
-          <div class="stack-g-label">Architecture &amp; DI</div>
-          <div class="pills">
-            <span class="pill">Clean Architecture</span>
-            <span class="pill">MVVM</span>
-            <span class="pill">Hilt</span>
-            <span class="pill">Koin</span>
-            <span class="pill">Repository Pattern</span>
-            <span class="pill">Use Cases</span>
-          </div>
-        </div>
-
-        <div class="stack-group reveal d3">
-          <div class="stack-g-label">Networking &amp; Data</div>
-          <div class="pills">
-            <span class="pill">Retrofit</span>
-            <span class="pill">Ktor</span>
-            <span class="pill">WebSocket</span>
-            <span class="pill">Room</span>
-            <span class="pill">SQLDelight</span>
-            <span class="pill">DataStore</span>
-            <span class="pill">Firebase</span>
-          </div>
-        </div>
-
-        <div class="stack-group reveal d4">
-          <div class="stack-g-label">DevOps &amp; Tooling</div>
-          <div class="pills">
-            <span class="pill">CI/CD Pipelines</span>
-            <span class="pill">GitHub Actions</span>
-            <span class="pill">Fastlane</span>
-            <span class="pill">Firebase App Distribution</span>
-            <span class="pill">Play Store Deployment</span>
-            <span class="pill">ProGuard / R8</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="s-divider"></div>
-
-  <!-- ── PROJECTS ── -->
-  <div id="projects" style="background:var(--bg2);">
-    <div class="section">
-      <div class="s-label">03 <span>/ Projects</span></div>
-      <h2 class="s-title">Selected <em>work.</em></h2>
-
-      <div class="projects-grid">
-
-        <div class="proj-card reveal">
-          <div class="proj-thumb">
-            📰
-            <span class="proj-badge badge-a">Android</span>
-          </div>
-          <div class="proj-body">
-            <h3>TribunX</h3>
-            <p>News &amp; social media platform with posts, comments and video. Firebase real-time sync.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Kotlin</span>
-              <span class="proj-tag">Compose</span>
-              <span class="proj-tag">Firebase</span>
-              <span class="proj-tag">MVVM</span>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun" target="_blank" class="proj-link">Play Store &rarr;</a>
-          </div>
-        </div>
-
-        <div class="proj-card reveal d1">
-          <div class="proj-thumb">
-            🔧
-            <span class="proj-badge badge-a">Android</span>
-          </div>
-          <div class="proj-body">
-            <h3>Digiroom</h3>
-            <p>Automotive spare parts marketplace with workshop booking, cart &amp; payment flows.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Kotlin</span>
-              <span class="proj-tag">Clean Arch</span>
-              <span class="proj-tag">Retrofit</span>
-              <span class="proj-tag">Room</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal d2">
-          <div class="proj-thumb">
-            💬
-            <span class="proj-badge badge-r">Real-time</span>
-          </div>
-          <div class="proj-body">
-            <h3>Omnichat</h3>
-            <p>Omnichannel customer service platform. WebSocket-powered live messaging.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">WebSocket</span>
-              <span class="proj-tag">Coroutines</span>
-              <span class="proj-tag">Hilt</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal">
-          <div class="proj-thumb">
-            🤖
-            <span class="proj-badge badge-e">Enterprise</span>
-          </div>
-          <div class="proj-body">
-            <h3>Jari AI</h3>
-            <p>AI-powered OCR for intelligent document recognition and classification at scale.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">ML Kit</span>
-              <span class="proj-tag">CameraX</span>
-              <span class="proj-tag">Koin</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal d1">
-          <div class="proj-thumb">
-            📍
-            <span class="proj-badge badge-e">Enterprise</span>
-          </div>
-          <div class="proj-body">
-            <h3>Jari Collection</h3>
-            <p>Collector management with live GPS tracking and financial reporting dashboards.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Maps SDK</span>
-              <span class="proj-tag">Location</span>
-              <span class="proj-tag">Room</span>
-            </div>
-            <a href="https://play.google.com/store/apps/details?id=id.co.jari.collection.true" target="_blank" class="proj-link">Play Store &rarr;</a>
-          </div>
-        </div>
-
-        <div class="proj-card reveal d2">
-          <div class="proj-thumb">
-            🏦
-            <span class="proj-badge badge-e">Banking</span>
-          </div>
-          <div class="proj-body">
-            <h3>Bankaltimtara SMS</h3>
-            <p>Secure SMS banking for transfers, balance inquiries and account mutation.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Android</span>
-              <span class="proj-tag">Security</span>
-              <span class="proj-tag">Biometric</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal">
-          <div class="proj-thumb">
-            💼
-            <span class="proj-badge badge-a">Android</span>
-          </div>
-          <div class="proj-body">
-            <h3>Mobile Payslip</h3>
-            <p>Employee management app with full payroll processing and leave management.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Kotlin</span>
-              <span class="proj-tag">Retrofit</span>
-              <span class="proj-tag">PDF</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal d1">
-          <div class="proj-thumb">
-            📊
-            <span class="proj-badge badge-e">Enterprise</span>
-          </div>
-          <div class="proj-body">
-            <h3>Saleskit BCA Finance</h3>
-            <p>Enterprise sales support for financial services. Offline-first with background sync.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">WorkManager</span>
-              <span class="proj-tag">Room</span>
-              <span class="proj-tag">Clean Arch</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="proj-card reveal d2">
-          <div class="proj-thumb">
-            🏨
-            <span class="proj-badge badge-e">Enterprise</span>
-          </div>
-          <div class="proj-body">
-            <h3>Dip House Keeping</h3>
-            <p>Hotel reservation system integrated with PMS &amp; POS, real-time room status.</p>
-            <div class="proj-tags">
-              <span class="proj-tag">Android</span>
-              <span class="proj-tag">POS Integration</span>
-              <span class="proj-tag">Bluetooth</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-  <div class="s-divider"></div>
-
-  <!-- ── EXPERIENCE ── -->
-  <section id="experience">
-    <div class="section">
-      <div class="s-label">04 <span>/ Experience</span></div>
-      <h2 class="s-title">Career <em>timeline.</em></h2>
-
-      <div class="timeline">
-
-        <div class="tl-entry reveal">
-          <div class="tl-dot"></div>
-          <div class="tl-period">2023 — Present</div>
-          <div class="tl-title">Senior Android Developer</div>
-          <div class="tl-org">Full-time · Jakarta, Indonesia</div>
-          <div class="tl-desc">
-            Leading mobile architecture decisions and adopting Kotlin Multiplatform for
-            shared logic across Android and iOS. Mentoring junior developers,
-            conducting code reviews, and owning CI/CD pipelines for production releases.
-          </div>
-          <div class="tl-chips">
-            <span class="tl-chip">KMP</span>
-            <span class="tl-chip">Compose</span>
-            <span class="tl-chip">Hilt</span>
-            <span class="tl-chip">CI/CD</span>
-            <span class="tl-chip">Clean Arch</span>
-          </div>
-        </div>
-
-        <div class="tl-entry reveal d1">
-          <div class="tl-dot"></div>
-          <div class="tl-period">2021 — 2023</div>
-          <div class="tl-title">Android Developer</div>
-          <div class="tl-org">Contract · Multiple Clients</div>
-          <div class="tl-desc">
-            Shipped multiple Android apps across fintech, media and enterprise.
-            Integrated real-time WebSocket communication, RESTful APIs, Firebase
-            and third-party SDKs on tight delivery schedules.
-          </div>
-          <div class="tl-chips">
-            <span class="tl-chip">Kotlin</span>
-            <span class="tl-chip">MVVM</span>
-            <span class="tl-chip">Retrofit</span>
-            <span class="tl-chip">Firebase</span>
-            <span class="tl-chip">Room</span>
-          </div>
-        </div>
-
-        <div class="tl-entry reveal d2">
-          <div class="tl-dot"></div>
-          <div class="tl-period">2020 — 2021</div>
-          <div class="tl-title">Junior Android Developer</div>
-          <div class="tl-org">Entry level</div>
-          <div class="tl-desc">
-            Started my mobile career building Android applications, mastering
-            Kotlin fundamentals, architecture patterns and the Android SDK.
-          </div>
-          <div class="tl-chips">
-            <span class="tl-chip">Java → Kotlin</span>
-            <span class="tl-chip">XML UI</span>
-            <span class="tl-chip">Android SDK</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <div class="s-divider"></div>
-
-  <!-- ── CONTACT ── -->
-  <div id="contact" style="background:var(--bg2);">
-    <div class="section">
-      <div class="s-label">05 <span>/ Contact</span></div>
-      <h2 class="s-title">Let's build something <em>great.</em></h2>
-
-      <div class="contact-grid">
-
-        <div>
-          <p class="contact-intro reveal">
-            Open to freelance projects, full-time roles and interesting collaborations.
-            If you're building a mobile product that needs solid architecture and
-            KMP expertise — I'd love to hear from you.
-          </p>
-
-          <div class="contact-links">
-            <a href="mailto:pascaladitia@gmail.com" class="c-link reveal d1">
-              <div class="c-link-icon">
-                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-              </div>
-              <div>
-                <span class="c-link-label">Email</span>
-                <span class="c-link-val">pascaladitia@gmail.com</span>
-              </div>
-            </a>
-
-            <a href="https://github.com/pascaladitia" target="_blank" class="c-link reveal d2">
-              <div class="c-link-icon">
-                <svg viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
-              </div>
-              <div>
-                <span class="c-link-label">GitHub</span>
-                <span class="c-link-val">github.com/pascaladitia</span>
-              </div>
-            </a>
-
-            <a href="https://linkedin.com/in/pascal-aditia-muclis" target="_blank" class="c-link reveal d3">
-              <div class="c-link-icon">
-                <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
-              </div>
-              <div>
-                <span class="c-link-label">LinkedIn</span>
-                <span class="c-link-val">pascal-aditia-muclis</span>
-              </div>
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-form reveal d2">
-          <div class="f-row">
-            <div class="f-group">
-              <label class="f-label">Name</label>
-              <input type="text" class="f-input" placeholder="Your name">
-            </div>
-            <div class="f-group">
-              <label class="f-label">Email</label>
-              <input type="email" class="f-input" placeholder="your@email.com">
-            </div>
+      <div class="c-form reveal d2">
+        <div class="f-row">
+          <div class="f-group">
+            <label class="f-label">Name</label>
+            <input type="text" class="f-input" placeholder="Your name" />
           </div>
           <div class="f-group">
-            <label class="f-label">Message</label>
-            <textarea class="f-textarea" placeholder="Tell me about your project..."></textarea>
+            <label class="f-label">Email</label>
+            <input type="email" class="f-input" placeholder="your@email.com" />
           </div>
-          <button class="btn-send">Send Message &rarr;</button>
         </div>
-
+        <div class="f-group">
+          <label class="f-label">Message</label>
+          <textarea class="f-textarea" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button class="btn-submit">Send Message &rarr;</button>
       </div>
+
     </div>
   </div>
+</section>
 
-  <!-- ── FOOTER ── -->
-  <footer>
-    <div class="footer-copy">&copy; 2026 <em>Pascal Aditia Muclis</em> &mdash; Senior Android &amp; KMP Developer</div>
-    <div class="footer-back" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top &uarr;</div>
-  </footer>
+<!-- ════════════════════════════════
+     FOOTER
+════════════════════════════════ -->
+<footer>
+  <div class="foot-copy">&copy; 2026 <em>Pascal Aditia Muclis</em> &mdash; Senior Android &amp; KMP Developer</div>
+  <div class="foot-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">Back to top &uarr;</div>
+</footer>
 
-  <script>
-    /* ── SCROLL REVEAL ── */
-    const revealEls = document.querySelectorAll('.reveal');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          e.target.classList.add('visible');
-          observer.unobserve(e.target);
-        }
-      });
-    }, { threshold: 0.1 });
-    revealEls.forEach(el => observer.observe(el));
+<!-- ════════════════════════════════
+     SCRIPTS
+════════════════════════════════ -->
+<script>
+  /* Scroll reveal */
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('on');
+        observer.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.1 });
 
-    /* ── ACTIVE NAV ── */
-    const sections = document.querySelectorAll('[id]');
-    const links = document.querySelectorAll('nav a');
-    window.addEventListener('scroll', () => {
-      let current = '';
-      sections.forEach(s => {
-        if (window.scrollY >= s.offsetTop - 90) current = s.id;
-      });
-      links.forEach(a => {
-        a.classList.toggle('active', a.getAttribute('href') === '#' + current);
-      });
-    }, { passive: true });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    /* ── HEADER SHADOW ON SCROLL ── */
-    const hdr = document.getElementById('header');
-    window.addEventListener('scroll', () => {
-      hdr.style.boxShadow = window.scrollY > 20 ? '0 1px 32px rgba(0,0,0,0.4)' : '';
-    }, { passive: true });
-  </script>
+  /* Nav: active link + scrolled shadow */
+  const nav = document.getElementById('nav');
+  const sections = document.querySelectorAll('section[id], div[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+
+  window.addEventListener('scroll', () => {
+    /* shadow */
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+
+    /* active */
+    let current = '';
+    sections.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 80) current = s.id;
+    });
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current);
+    });
+  }, { passive: true });
+</script>
 
 </body>
 </html>
