@@ -5,14 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pascal Aditia Muclis — Mobile Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
-<!-- ▸ NAV -->
+<!-- ── NAV ── -->
 <nav id="nav">
-  <a href="#" class="logo">PAM<span>.</span></a>
+  <a href="#" class="logo">Pascal <span>Aditia</span> Muclis</a>
   <ul>
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
@@ -21,58 +21,45 @@
   <a href="mailto:pascaladitia@gmail.com" class="nav-cta">Hire Me</a>
 </nav>
 
-<!-- ▸ HERO -->
+<!-- ── HERO ── -->
 <section id="hero">
-  <!-- animated bg blobs -->
   <div class="blob b1"></div>
   <div class="blob b2"></div>
   <div class="blob b3"></div>
-  <!-- grid -->
   <div class="grid-bg"></div>
 
   <div class="hero-wrap">
-    <!-- left: text -->
     <div class="hero-left">
-      <div class="hero-tag">
-        <span class="ping"></span>
-        Available for work
-      </div>
-
+      <div class="hero-tag"><span class="ping"></span>Available for work</div>
       <h1 class="hero-title">
-        <span class="line-top">Kotlin</span>
-        <span class="line-mid">Multi<em>platform</em></span>
-        <span class="line-bot">Developer</span>
+        <span>Kotlin</span>
+        <span>Multi<em>platform</em></span>
+        <span>Developer</span>
       </h1>
-
       <p class="hero-desc">
         Building apps for <strong>Android &amp; iOS</strong> from a single codebase.
         4+ years crafting production-grade mobile experiences.
       </p>
-
       <div class="hero-actions">
         <a href="#work" class="btn-main">See My Work</a>
         <a href="#contact" class="btn-ghost">Get In Touch</a>
       </div>
     </div>
 
-    <!-- right: floating stat cards -->
     <div class="hero-right">
-      <div class="stat-card sc1">
+      <div class="stat-card">
         <span class="sc-num">4<small>+</small></span>
         <span class="sc-lbl">Years of Experience</span>
       </div>
-      <div class="stat-card sc2">
+      <div class="stat-card">
         <span class="sc-num">9<small>+</small></span>
         <span class="sc-lbl">Apps Shipped</span>
       </div>
-      <div class="stat-card sc3">
-        <div class="sc-platforms">
-          <span>🤖 Android</span>
-          <span>🍎 iOS</span>
-        </div>
+      <div class="stat-card">
+        <div class="sc-platforms"><span>🤖 Android</span><span>🍎 iOS</span></div>
         <span class="sc-lbl">Platforms</span>
       </div>
-      <div class="stat-card sc4">
+      <div class="stat-card">
         <span class="sc-tag-row">
           <span class="sc-chip">KMP</span>
           <span class="sc-chip">Compose</span>
@@ -89,7 +76,7 @@
   </div>
 </section>
 
-<!-- ▸ MARQUEE STRIP -->
+<!-- ── MARQUEE ── -->
 <div class="marquee-wrap">
   <div class="marquee-track">
     <span>Kotlin Multiplatform</span><span class="dot">✦</span>
@@ -102,7 +89,6 @@
     <span>WebSocket</span><span class="dot">✦</span>
     <span>CI/CD</span><span class="dot">✦</span>
     <span>Room / SQLDelight</span><span class="dot">✦</span>
-    <!-- duplicate for seamless loop -->
     <span>Kotlin Multiplatform</span><span class="dot">✦</span>
     <span>Jetpack Compose</span><span class="dot">✦</span>
     <span>Clean Architecture</span><span class="dot">✦</span>
@@ -116,7 +102,7 @@
   </div>
 </div>
 
-<!-- ▸ WORK / PROJECTS -->
+<!-- ── WORK ── -->
 <section id="work">
   <div class="sec-inner">
     <div class="sec-header reveal">
@@ -124,34 +110,47 @@
       <h2 class="sec-h2">Apps I've <em>built</em></h2>
     </div>
 
-    <!-- FEATURED PROJECT — big card -->
-    <div class="proj-featured reveal">
+    <!-- FEATURED -->
+    <div class="proj-featured reveal"
+      data-title="TribunX"
+      data-badge="Android"
+      data-badge-class="b-android"
+      data-desc="News &amp; social media application with real-time post, comment, and video features. Built with Jetpack Compose and Firebase for live sync across thousands of users. Implements MVVM Clean Architecture with Hilt for dependency injection, Coroutines for async operations, and Paging 3 for infinite scroll."
+      data-tech="Kotlin,Jetpack Compose,Firebase,MVVM,Hilt,Coroutines,Paging 3"
+      data-link="https://play.google.com/store/apps/details?id=mobile.android.tribun"
+      data-link-label="View on Play Store"
+      data-emoji="📰">
       <div class="pf-thumb">
-        <!--  Replace with: <img src="assets/tribunx.jpg" alt="TribunX"> -->
-        <div class="thumb-ph">📰</div>
+        <!-- <img src="assets/tribunx.jpg" alt="TribunX"> -->
+        <div class="thumb-ph" style="font-size:5rem">📰</div>
         <div class="pf-overlay"></div>
         <span class="badge b-android">Android</span>
       </div>
       <div class="pf-body">
         <div class="pf-num">01</div>
         <h3>TribunX</h3>
-        <p>News &amp; social media application with real-time post, comment, and video features. Built with Jetpack Compose and Firebase for live sync across thousands of users.</p>
+        <p>News &amp; social media platform with real-time posts, comments and video. Firebase live sync across thousands of users.</p>
         <div class="proj-tech">
           <span>Kotlin</span><span>Jetpack Compose</span><span>Firebase</span><span>MVVM</span><span>Hilt</span>
         </div>
-        <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun" target="_blank" class="proj-cta">
-          View on Play Store
-          <svg viewBox="0 0 16 16" width="14" height="14"><path d="M2 8h10M8 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+        <div class="proj-actions">
+          <button class="proj-detail-btn">View Details →</button>
+          <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun" target="_blank" class="proj-store-link">Play Store ↗</a>
+        </div>
       </div>
     </div>
 
-    <!-- PROJECT GRID — 3 col -->
+    <!-- GRID -->
     <div class="proj-grid">
 
-      <!-- Digiroom -->
-      <div class="proj-card reveal">
+      <div class="proj-card reveal"
+        data-title="Digiroom"
+        data-badge="Android" data-badge-class="b-android"
+        data-desc="Automotive spare parts marketplace with workshop service booking. Features complex product search, shopping cart, order tracking, and full payment flow. Implements offline-first with Room and background sync."
+        data-tech="Kotlin,Clean Architecture,Retrofit,Room,MVVM,Hilt"
+        data-emoji="🔧">
         <div class="pc-thumb">
+          <!-- <img src="assets/digiroom.jpg" alt="Digiroom"> -->
           <div class="thumb-ph">🔧</div>
           <span class="badge b-android">Android</span>
         </div>
@@ -159,138 +158,164 @@
           <span class="pc-num">02</span>
           <h3>Digiroom</h3>
           <p>Automotive spare parts marketplace with workshop booking, cart &amp; full payment flow.</p>
-          <div class="proj-tech">
-            <span>Kotlin</span><span>Clean Arch</span><span>Retrofit</span><span>Room</span>
-          </div>
+          <div class="proj-tech"><span>Kotlin</span><span>Clean Arch</span><span>Retrofit</span><span>Room</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-      <!-- Omnichat -->
-      <div class="proj-card reveal d1">
+      <div class="proj-card reveal d1"
+        data-title="Omnichat"
+        data-badge="Real-time" data-badge-class="b-rt"
+        data-desc="Real-time omnichannel customer service platform. WebSocket-powered live messaging handles multi-agent sessions across multiple channels simultaneously. Features message queuing, read receipts, typing indicators, and agent handoff."
+        data-tech="WebSocket,Coroutines,Hilt,MVVM,OkHttp,Flow"
+        data-emoji="💬">
         <div class="pc-thumb">
+          <!-- <img src="assets/omnichat.jpg" alt="Omnichat"> -->
           <div class="thumb-ph">💬</div>
           <span class="badge b-rt">Real-time</span>
         </div>
         <div class="pc-body">
           <span class="pc-num">03</span>
           <h3>Omnichat</h3>
-          <p>Real-time omnichannel customer service platform via WebSocket. Handles multi-agent live sessions.</p>
-          <div class="proj-tech">
-            <span>WebSocket</span><span>Coroutines</span><span>Hilt</span>
-          </div>
+          <p>Real-time omnichannel customer service via WebSocket. Multi-agent live sessions.</p>
+          <div class="proj-tech"><span>WebSocket</span><span>Coroutines</span><span>Hilt</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-      <!-- Jari AI -->
-      <div class="proj-card reveal d2">
+      <div class="proj-card reveal d2"
+        data-title="Jari AI"
+        data-badge="Enterprise" data-badge-class="b-enter"
+        data-desc="AI-powered OCR enterprise solution for intelligent document recognition and classification at scale. Uses ML Kit and CameraX for real-time capture, with a custom classification pipeline and REST API integration for data extraction."
+        data-tech="ML Kit,CameraX,Koin,Retrofit,Clean Architecture,Coroutines"
+        data-emoji="🤖">
         <div class="pc-thumb">
+          <!-- <img src="assets/jariai.jpg" alt="Jari AI"> -->
           <div class="thumb-ph">🤖</div>
           <span class="badge b-enter">Enterprise</span>
         </div>
         <div class="pc-body">
           <span class="pc-num">04</span>
           <h3>Jari AI</h3>
-          <p>AI-powered OCR enterprise solution. Recognizes and classifies documents with ML Kit &amp; CameraX.</p>
-          <div class="proj-tech">
-            <span>ML Kit</span><span>CameraX</span><span>Koin</span>
-          </div>
+          <p>AI-powered OCR enterprise solution. Recognizes and classifies documents with ML Kit.</p>
+          <div class="proj-tech"><span>ML Kit</span><span>CameraX</span><span>Koin</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-      <!-- Jari Collection -->
-      <div class="proj-card reveal">
+      <div class="proj-card reveal"
+        data-title="Jari Collection"
+        data-badge="Enterprise" data-badge-class="b-enter"
+        data-desc="Collector management system with live GPS tracking, visit logging, and financial reporting dashboards. Features offline data collection, background location updates, route optimization, and detailed collection reports with chart visualizations."
+        data-tech="Maps SDK,Location Services,Room,Coroutines,Charts,WorkManager"
+        data-link="https://play.google.com/store/apps/details?id=id.co.jari.collection.true"
+        data-link-label="View on Play Store"
+        data-emoji="📍">
         <div class="pc-thumb">
+          <!-- <img src="assets/jaricollection.jpg" alt="Jari Collection"> -->
           <div class="thumb-ph">📍</div>
           <span class="badge b-enter">Enterprise</span>
         </div>
         <div class="pc-body">
           <span class="pc-num">05</span>
           <h3>Jari Collection</h3>
-          <p>Collector management with live GPS tracking, visit logging, and financial reporting dashboards.</p>
-          <div class="proj-tech">
-            <span>Maps SDK</span><span>Location</span><span>Room</span>
-          </div>
-          <a href="https://play.google.com/store/apps/details?id=id.co.jari.collection.true" target="_blank" class="proj-cta sm">
-            Play Store →
-          </a>
+          <p>Collector management with live GPS tracking and financial reporting dashboards.</p>
+          <div class="proj-tech"><span>Maps SDK</span><span>Location</span><span>Room</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-      <!-- Bankaltimtara -->
-      <div class="proj-card reveal d1">
+      <div class="proj-card reveal d1"
+        data-title="Bankaltimtara SMS"
+        data-badge="Banking" data-badge-class="b-bank"
+        data-desc="Secure SMS banking application for Bankaltimtara. Supports fund transfers, balance inquiries, and account mutation history. Implements biometric authentication, encrypted local storage, and SMS OTP verification for high-security transactions."
+        data-tech="Android,Biometric Auth,EncryptedSharedPrefs,SMS API,Security"
+        data-emoji="🏦">
         <div class="pc-thumb">
+          <!-- <img src="assets/bankaltim.jpg" alt="Bankaltimtara"> -->
           <div class="thumb-ph">🏦</div>
           <span class="badge b-bank">Banking</span>
         </div>
         <div class="pc-body">
           <span class="pc-num">06</span>
           <h3>Bankaltimtara SMS</h3>
-          <p>Secure SMS banking for fund transfers, balance inquiries and account mutations with biometric auth.</p>
-          <div class="proj-tech">
-            <span>Android</span><span>Security</span><span>Biometric</span>
-          </div>
+          <p>Secure SMS banking for fund transfers, balance inquiries and account mutations.</p>
+          <div class="proj-tech"><span>Android</span><span>Security</span><span>Biometric</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-      <!-- Mobile Payslip -->
-      <div class="proj-card reveal d2">
+      <div class="proj-card reveal d2"
+        data-title="Mobile Payslip"
+        data-badge="Enterprise" data-badge-class="b-enter"
+        data-desc="Full-featured employee management application with payroll processing, PDF payslip export, leave request management, and attendance tracking. Integrates with company HR backend via REST API with role-based access control."
+        data-tech="Kotlin,Retrofit,Room,PDF Export,MVVM,Hilt,WorkManager"
+        data-emoji="💼">
         <div class="pc-thumb">
+          <!-- <img src="assets/payslip.jpg" alt="Mobile Payslip"> -->
           <div class="thumb-ph">💼</div>
           <span class="badge b-enter">Enterprise</span>
         </div>
         <div class="pc-body">
           <span class="pc-num">07</span>
           <h3>Mobile Payslip</h3>
-          <p>Full-featured employee management with payroll processing, PDF export and leave management.</p>
-          <div class="proj-tech">
-            <span>Kotlin</span><span>Retrofit</span><span>PDF Export</span>
-          </div>
+          <p>Employee management with payroll processing, PDF export and leave management.</p>
+          <div class="proj-tech"><span>Kotlin</span><span>Retrofit</span><span>PDF Export</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-      <!-- Saleskit BCA -->
-      <div class="proj-card reveal">
+      <div class="proj-card reveal"
+        data-title="Saleskit BCA Finance"
+        data-badge="Enterprise" data-badge-class="b-enter"
+        data-desc="Enterprise sales support platform for BCA Finance field agents. Offline-first architecture with WorkManager background sync, product catalog browsing, customer submission forms, and real-time status tracking for loan applications."
+        data-tech="WorkManager,Room,Retrofit,Clean Architecture,MVVM,Hilt"
+        data-emoji="📊">
         <div class="pc-thumb">
+          <!-- <img src="assets/saleskit.jpg" alt="Saleskit BCA"> -->
           <div class="thumb-ph">📊</div>
           <span class="badge b-enter">Enterprise</span>
         </div>
         <div class="pc-body">
           <span class="pc-num">08</span>
           <h3>Saleskit BCA Finance</h3>
-          <p>Enterprise sales support for financial services. Offline-first architecture with background WorkManager sync.</p>
-          <div class="proj-tech">
-            <span>WorkManager</span><span>Room</span><span>Clean Arch</span>
-          </div>
+          <p>Enterprise sales support for financial services. Offline-first with background sync.</p>
+          <div class="proj-tech"><span>WorkManager</span><span>Room</span><span>Clean Arch</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-      <!-- Dip Housekeeping -->
-      <div class="proj-card reveal d1">
+      <div class="proj-card reveal d1"
+        data-title="Dip House Keeping"
+        data-badge="Enterprise" data-badge-class="b-enter"
+        data-desc="Hotel housekeeping and reservation management system fully integrated with PMS and POS. Features real-time room status updates, task assignment for housekeeping staff, Bluetooth thermal printing for receipts, and guest management."
+        data-tech="Android,POS Integration,Bluetooth,Retrofit,Room,MVVM"
+        data-emoji="🏨">
         <div class="pc-thumb">
+          <!-- <img src="assets/housekeeping.jpg" alt="Dip House Keeping"> -->
           <div class="thumb-ph">🏨</div>
           <span class="badge b-enter">Enterprise</span>
         </div>
         <div class="pc-body">
           <span class="pc-num">09</span>
           <h3>Dip House Keeping</h3>
-          <p>Hotel reservation system integrated with PMS &amp; POS. Real-time room status and Bluetooth printing.</p>
-          <div class="proj-tech">
-            <span>Android</span><span>POS Integration</span><span>Bluetooth</span>
-          </div>
+          <p>Hotel reservation system with PMS &amp; POS integration. Bluetooth printing support.</p>
+          <div class="proj-tech"><span>Android</span><span>POS Integration</span><span>Bluetooth</span></div>
+          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
-    </div><!-- /proj-grid -->
+    </div>
   </div>
 </section>
 
-<!-- ▸ ABOUT -->
+<!-- ── ABOUT ── -->
 <section id="about" class="sec-dark">
   <div class="sec-inner">
     <div class="about-layout">
       <div class="about-left reveal">
         <div class="eyebrow">About Me</div>
-        <h2 class="sec-h2">Code that<br><em>ships.</em></h2>
+        <h2 class="sec-h2">Code that <em>ships.</em></h2>
         <p>Senior Android Developer with 4+ years shipping production apps. Specialist in <strong>Kotlin Multiplatform</strong> — one codebase, two platforms, zero compromise.</p>
         <p>I architect with <strong>Clean Architecture &amp; MVVM</strong>, automate with CI/CD, and obsess over performance from the first commit to the Play Store.</p>
         <div class="about-chips">
@@ -302,34 +327,27 @@
         </div>
       </div>
       <div class="about-right reveal d1">
-        <!-- Timeline -->
         <div class="timeline">
           <div class="tl-item">
             <div class="tl-dot"></div>
             <div class="tl-year">2023 — Present</div>
             <div class="tl-role">Senior Android Developer</div>
             <div class="tl-org">Full-time · Jakarta</div>
-            <div class="tl-chips">
-              <span>KMP</span><span>Compose</span><span>Hilt</span><span>CI/CD</span>
-            </div>
+            <div class="tl-chips"><span>KMP</span><span>Compose</span><span>Hilt</span><span>CI/CD</span></div>
           </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
             <div class="tl-year">2021 — 2023</div>
             <div class="tl-role">Android Developer</div>
             <div class="tl-org">Contract · Multiple Clients</div>
-            <div class="tl-chips">
-              <span>Kotlin</span><span>MVVM</span><span>Firebase</span>
-            </div>
+            <div class="tl-chips"><span>Kotlin</span><span>MVVM</span><span>Firebase</span></div>
           </div>
           <div class="tl-item">
             <div class="tl-dot"></div>
             <div class="tl-year">2020 — 2021</div>
             <div class="tl-role">Junior Android Developer</div>
             <div class="tl-org">Entry Level</div>
-            <div class="tl-chips">
-              <span>Kotlin</span><span>Android SDK</span>
-            </div>
+            <div class="tl-chips"><span>Kotlin</span><span>Android SDK</span></div>
           </div>
         </div>
       </div>
@@ -337,28 +355,30 @@
   </div>
 </section>
 
-<!-- ▸ CONTACT -->
+<!-- ── CONTACT ── -->
 <section id="contact">
   <div class="sec-inner">
     <div class="contact-wrap reveal">
       <div class="contact-left">
         <div class="eyebrow">Get In Touch</div>
-        <h2 class="sec-h2">Let's build<br><em>something great.</em></h2>
+        <h2 class="sec-h2">Let's build <em>something great.</em></h2>
         <p>Open to freelance, full-time roles, and exciting collaborations. Building a mobile product that needs KMP expertise? Let's talk.</p>
         <div class="contact-links">
           <a href="mailto:pascaladitia@gmail.com" class="c-link">
-            <div class="c-ico">✉</div>
+            <div class="c-ico">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            </div>
             <div><span>Email</span><strong>pascaladitia@gmail.com</strong></div>
           </a>
           <a href="https://github.com/pascaladitia" target="_blank" class="c-link">
             <div class="c-ico">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12 24 5.37 18.63 0 12 0z"/></svg>
             </div>
             <div><span>GitHub</span><strong>github.com/pascaladitia</strong></div>
           </a>
           <a href="https://linkedin.com/in/pascal-aditia-muclis" target="_blank" class="c-link">
             <div class="c-ico">
-              <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
             </div>
             <div><span>LinkedIn</span><strong>pascal-aditia-muclis</strong></div>
           </a>
@@ -367,11 +387,11 @@
       <form class="contact-form" onsubmit="return false">
         <div class="f-group">
           <label>Name</label>
-          <input type="text" placeholder="Your name" />
+          <input type="text" placeholder="Your name"/>
         </div>
         <div class="f-group">
           <label>Email</label>
-          <input type="email" placeholder="your@email.com" />
+          <input type="email" placeholder="your@email.com"/>
         </div>
         <div class="f-group">
           <label>Message</label>
@@ -383,36 +403,150 @@
   </div>
 </section>
 
-<!-- ▸ FOOTER -->
+<!-- ── FOOTER ── -->
 <footer>
   <div class="foot-inner">
-    <span class="foot-logo">PAM<em>.</em></span>
+    <span class="foot-logo">Pascal<em>.</em></span>
     <span class="foot-copy">© 2026 Pascal Aditia Muclis · Senior Android &amp; KMP Developer</span>
     <button class="foot-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
   </div>
 </footer>
 
+<!-- ═══════════════════════════════
+     PROJECT DIALOG / MODAL
+═══════════════════════════════ -->
+<div id="modal" class="modal-backdrop" aria-hidden="true">
+  <div class="modal-box" role="dialog" aria-modal="true">
+    <button class="modal-close" id="modal-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div class="modal-inner">
+      <!-- image / preview side -->
+      <div class="modal-media" id="modal-media">
+        <div class="modal-thumb" id="modal-thumb">
+          <!-- filled by JS -->
+        </div>
+        <div class="modal-media-meta" id="modal-media-meta"></div>
+      </div>
+
+      <!-- info side -->
+      <div class="modal-info">
+        <span class="modal-badge" id="modal-badge"></span>
+        <h2 class="modal-title" id="modal-title"></h2>
+        <p class="modal-desc" id="modal-desc"></p>
+
+        <div class="modal-section-label">Tech Stack</div>
+        <div class="modal-tech" id="modal-tech"></div>
+
+        <div class="modal-footer-actions" id="modal-footer-actions"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
-/* Scroll reveal */
+/* ── SCROLL REVEAL ── */
 const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
-}, { threshold: 0.08 });
+  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }});
+}, { threshold: 0.07 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-/* Nav scroll */
-const nav = document.getElementById('nav');
+/* ── NAV ── */
+const navEl = document.getElementById('nav');
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
+  navEl.classList.toggle('scrolled', window.scrollY > 40);
 }, { passive: true });
 
-/* Active nav link */
-const sections = document.querySelectorAll('section[id]');
-const links = document.querySelectorAll('nav a[href^="#"]');
+const secs = document.querySelectorAll('section[id]');
+const navAs = document.querySelectorAll('nav a[href^="#"]');
 window.addEventListener('scroll', () => {
   let cur = '';
-  sections.forEach(s => { if (window.scrollY >= s.offsetTop - 100) cur = s.id; });
-  links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
+  secs.forEach(s => { if (window.scrollY >= s.offsetTop - 110) cur = s.id; });
+  navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
 }, { passive: true });
+
+/* ── PROJECT MODAL ── */
+const modal   = document.getElementById('modal');
+const mClose  = document.getElementById('modal-close');
+const mThumb  = document.getElementById('modal-thumb');
+const mMeta   = document.getElementById('modal-media-meta');
+const mBadge  = document.getElementById('modal-badge');
+const mTitle  = document.getElementById('modal-title');
+const mDesc   = document.getElementById('modal-desc');
+const mTech   = document.getElementById('modal-tech');
+const mFooter = document.getElementById('modal-footer-actions');
+
+function openModal(el) {
+  const d = el.dataset;
+
+  /* badge */
+  mBadge.textContent = d.badge || '';
+  mBadge.className = 'modal-badge ' + (d.badgeClass || '');
+
+  /* title */
+  mTitle.textContent = d.title || '';
+
+  /* description */
+  mDesc.innerHTML = d.desc || '';
+
+  /* thumbnail: check if there's an img inside pc-thumb / pf-thumb */
+  const imgEl = el.querySelector('img');
+  mThumb.innerHTML = '';
+  if (imgEl) {
+    const clone = imgEl.cloneNode();
+    clone.style.cssText = 'width:100%;height:100%;object-fit:cover;border-radius:0;';
+    mThumb.appendChild(clone);
+  } else {
+    const emoji = d.emoji || '📱';
+    mThumb.innerHTML = `<div class="modal-thumb-ph">${emoji}</div>`;
+  }
+
+  /* meta label under image */
+  mMeta.textContent = d.title || '';
+
+  /* tech pills */
+  const techs = (d.tech || '').split(',').map(t => t.trim()).filter(Boolean);
+  mTech.innerHTML = techs.map(t => `<span>${t}</span>`).join('');
+
+  /* footer actions */
+  let acts = '';
+  if (d.link) {
+    acts += `<a href="${d.link}" target="_blank" class="modal-btn-store">${d.linkLabel || 'View on Play Store'} ↗</a>`;
+  }
+  acts += `<button class="modal-btn-close-foot" onclick="closeModal()">Close</button>`;
+  mFooter.innerHTML = acts;
+
+  modal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+  modal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+/* attach to all clickable cards / buttons */
+document.querySelectorAll('.proj-detail-btn').forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.stopPropagation();
+    const card = btn.closest('[data-title]');
+    if (card) openModal(card);
+  });
+});
+
+/* also clicking the card thumb opens modal */
+document.querySelectorAll('.pc-thumb, .pf-thumb').forEach(thumb => {
+  thumb.style.cursor = 'pointer';
+  thumb.addEventListener('click', () => {
+    const card = thumb.closest('[data-title]');
+    if (card) openModal(card);
+  });
+});
+
+mClose.addEventListener('click', closeModal);
+modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 </script>
 </body>
 </html>
