@@ -161,7 +161,6 @@
           <h3>Digiroom</h3>
           <p>Automotive spare parts marketplace with workshop booking, cart &amp; full payment flow.</p>
           <div class="proj-tech"><span>Kotlin</span><span>Clean Arch</span><span>Retrofit</span><span>Room</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -181,7 +180,6 @@
           <h3>Omnichat</h3>
           <p>Real-time omnichannel customer service via WebSocket. Multi-agent live sessions.</p>
           <div class="proj-tech"><span>WebSocket</span><span>Coroutines</span><span>Hilt</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -201,7 +199,6 @@
           <h3>Jari AI</h3>
           <p>AI-powered OCR enterprise solution. Recognizes and classifies documents with ML Kit.</p>
           <div class="proj-tech"><span>ML Kit</span><span>CameraX</span><span>Koin</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -223,7 +220,7 @@
           <h3>Jari Collection</h3>
           <p>Collector management with live GPS tracking and financial reporting dashboards.</p>
           <div class="proj-tech"><span>Maps SDK</span><span>Location</span><span>Room</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
+          <a href="https://play.google.com/store/apps/details?id=id.co.jari.collection.true" target="_blank" class="card-store-btn" onclick="event.stopPropagation()">View on Play Store ↗</a>
         </div>
       </div>
 
@@ -243,7 +240,6 @@
           <h3>Bankaltimtara SMS</h3>
           <p>Secure SMS banking for fund transfers, balance inquiries and account mutations.</p>
           <div class="proj-tech"><span>Android</span><span>Security</span><span>Biometric</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -263,7 +259,6 @@
           <h3>Mobile Payslip</h3>
           <p>Employee management with payroll processing, PDF export and leave management.</p>
           <div class="proj-tech"><span>Kotlin</span><span>Retrofit</span><span>PDF Export</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -283,7 +278,6 @@
           <h3>Saleskit BCA Finance</h3>
           <p>Enterprise sales support for financial services. Offline-first with background sync.</p>
           <div class="proj-tech"><span>WorkManager</span><span>Room</span><span>Clean Arch</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -303,7 +297,6 @@
           <h3>Dip House Keeping</h3>
           <p>Hotel reservation system with PMS &amp; POS integration. Bluetooth printing support.</p>
           <div class="proj-tech"><span>Android</span><span>POS Integration</span><span>Bluetooth</span></div>
-          <button class="proj-detail-btn sm">View Details →</button>
         </div>
       </div>
 
@@ -530,20 +523,16 @@ function closeModal() {
   document.body.style.overflow = '';
 }
 
-// "View Details" buttons — stop propagation so card click doesn't double-fire
-document.querySelectorAll('.proj-detail-btn').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.stopPropagation();
-    const card = btn.closest('[data-title]');
-    if (card) openModal(card);
-  });
-});
-
 // clicking ANYWHERE on a card opens the modal
 document.querySelectorAll('.proj-card, .proj-featured').forEach(card => {
   card.addEventListener('click', () => {
     if (card.hasAttribute('data-title')) openModal(card);
   });
+});
+
+// play store links inside cards should NOT trigger the modal
+document.querySelectorAll('.card-store-btn, .proj-cta').forEach(link => {
+  link.addEventListener('click', e => e.stopPropagation());
 });
 
 // close on backdrop click or Escape key
