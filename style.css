@@ -1002,9 +1002,9 @@ nav ul a.active::after {
   border: 1px solid;
 }
 
-.b-android {
-  color: #5eead4;
-  border-color: rgba(94, 234, 212, .25);
+.b-jari {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.25);
   background: rgba(94, 234, 212, .07);
 }
 
