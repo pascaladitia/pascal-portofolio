@@ -345,7 +345,7 @@ nav ul a:hover::after, nav ul a.active::after { width: 100%; }
 .proj-featured:hover { border-color: var(--line-a); box-shadow: 0 24px 80px rgba(0,0,0,.5); }
 
 .pf-thumb {
-  position: relative; min-height: 420px;
+  position: relative; height: 420px;
   background: linear-gradient(135deg, #0e0e22, #181838);
   overflow: hidden; cursor: pointer;
 }
@@ -551,7 +551,7 @@ nav ul a:hover::after, nav ul a.active::after { width: 100%; }
 /* IMAGE FULL WIDTH */
 .modal-media {
   width: 100%;
-  height: 320px;
+  height: 800px;
   background: linear-gradient(135deg, #0c0c20, #16163a);
   position: relative;
   overflow: hidden;

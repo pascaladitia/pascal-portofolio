@@ -112,31 +112,37 @@
 
     <!-- FEATURED -->
     <div class="proj-featured reveal"
-      data-title="TribunX"
+      data-title="Jari Collection"
       data-badge="Android"
       data-badge-class="b-android"
-      data-desc="News &amp; social media application with real-time post, comment, and video features. Built with Jetpack Compose and Firebase for live sync across thousands of users. Implements MVVM Clean Architecture with Hilt for dependency injection, Coroutines for async operations, and Paging 3 for infinite scroll."
-      data-tech="Kotlin,Jetpack Compose,Firebase,MVVM,Hilt,Coroutines,Paging 3"
-      data-link="https://play.google.com/store/apps/details?id=mobile.android.tribun"
+      data-desc="Collection management application designed for banking field officers to manage customer visit data, payment records, and activity tracking. Built with Jetpack Compose, Ktor for networking, Room for offline data storage, and Firebase services. The app includes background tracking, secure data handling, and Bluetooth printer support for field operations."
+      data-tech="Kotlin,Jetpack Compose,Ktor,Room,Firebase,Android Security,Bluetooth Printer,Background Tracking"
+      data-link="https://play.google.com/store/apps/details?id=id.co.jari.collection.true"
       data-link-label="View on Play Store"
-      data-emoji="📰">
+      data-emoji="📱">
+
       <div class="pf-thumb">
-        <!-- <img src="assets/tribunx.jpg" alt="TribunX"> -->
-        <div class="thumb-ph" style="font-size:5rem">📰</div>
+        <img src="assets/jari_collection.png" alt="Jari Collection">
         <div class="pf-overlay"></div>
         <span class="badge b-android">Android</span>
       </div>
+
       <div class="pf-body">
         <div class="pf-num">01</div>
-        <h3>TribunX</h3>
-        <p>News &amp; social media platform with real-time posts, comments and video. Firebase live sync across thousands of users.</p>
+        <h3>Jari Collection</h3>
+        <p>Collection management app for banking field officers to manage customer visits, payment records, and activity tracking.</p>
+
         <div class="proj-tech">
-          <span>Kotlin</span><span>Jetpack Compose</span><span>Firebase</span><span>MVVM</span><span>Hilt</span>
+          <span>Kotlin</span>
+          <span>Compose</span>
+          <span>Ktor</span>
+          <span>Room</span>
+          <span>Firebase</span>
+          <span>Security</span>
         </div>
-          <div class="proj-actions">
-          <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun"
-            target="_blank"
-            class="proj-store-link">
+
+        <div class="proj-actions">
+          <a href="https://play.google.com/store/apps/details?id=id.co.jari.collection.true" target="_blank" class="proj-store-link">
             View on Play Store ↗
           </a>
         </div>
@@ -499,25 +505,38 @@
 <script>
 /* ── SCROLL REVEAL ── */
 const io = new IntersectionObserver(entries => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); }});
-}, { threshold: 0.07 });
-document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('on');
+      io.unobserve(e.target);
+    }
+  });
+},{threshold:0.07});
+
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
 /* ── NAV ── */
 const navEl = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  navEl.classList.toggle('scrolled', window.scrollY > 40);
-}, { passive: true });
+window.addEventListener('scroll',()=>{
+  navEl.classList.toggle('scrolled',window.scrollY>40);
+},{passive:true});
 
 const secs = document.querySelectorAll('section[id]');
 const navAs = document.querySelectorAll('nav a[href^="#"]');
-window.addEventListener('scroll', () => {
-  let cur = '';
-  secs.forEach(s => { if (window.scrollY >= s.offsetTop - 110) cur = s.id; });
-  navAs.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + cur));
-}, { passive: true });
 
-/* ── PROJECT MODAL ── */
+window.addEventListener('scroll',()=>{
+  let cur='';
+  secs.forEach(s=>{
+    if(window.scrollY>=s.offsetTop-110) cur=s.id;
+  });
+  navAs.forEach(a=>{
+    a.classList.toggle('active',a.getAttribute('href')==='#'+cur);
+  });
+},{passive:true});
+
+
+/* ───────── MODAL PROJECT ───────── */
+
 const modal   = document.getElementById('modal');
 const mThumb  = document.getElementById('modal-thumb');
 const mMeta   = document.getElementById('modal-media-meta');
@@ -527,73 +546,82 @@ const mDesc   = document.getElementById('modal-desc');
 const mTech   = document.getElementById('modal-tech');
 const mFooter = document.getElementById('modal-footer-actions');
 
-function openModal(el) {
-  const d = el.dataset;
+function openModal(card){
 
-  // badge — note: data-badge-class in HTML becomes d['badge-class'] NOT d.badgeClass
-  const badgeClass = el.getAttribute('data-badge-class') || '';
-  mBadge.textContent = d.badge || '';
+  const title = card.getAttribute('data-title') || '';
+  const desc  = card.getAttribute('data-desc') || '';
+  const badge = card.getAttribute('data-badge') || '';
+  const badgeClass = card.getAttribute('data-badge-class') || '';
+  const tech  = card.getAttribute('data-tech') || '';
+  const link  = card.getAttribute('data-link') || '';
+  const linkLabel = card.getAttribute('data-link-label') || 'View Project';
+  const emoji = card.getAttribute('data-emoji') || '📱';
+
+  /* title + desc */
+  mTitle.textContent = title;
+  mDesc.innerHTML = desc;
+  mMeta.textContent = title;
+
+  /* badge */
+  mBadge.textContent = badge;
   mBadge.className = 'modal-badge ' + badgeClass;
 
-  mTitle.textContent = d.title || '';
-  mDesc.innerHTML    = d.desc  || '';
-  mMeta.textContent  = d.title || '';
-
-  // thumbnail
-  const imgEl = el.querySelector('.pc-thumb img, .pf-thumb img');
+  /* image / emoji */
+  const img = card.querySelector('img');
   mThumb.innerHTML = '';
-  if (imgEl) {
-    const clone = document.createElement('img');
-    clone.src   = imgEl.src;
-    clone.alt   = imgEl.alt;
-    clone.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+
+  if(img){
+    const clone = img.cloneNode();
+    clone.style.width='100%';
+    clone.style.height='100%';
+    clone.style.objectFit='cover';
     mThumb.appendChild(clone);
-  } else {
-    mThumb.innerHTML = `<div class="modal-thumb-ph">${d.emoji || '📱'}</div>`;
+  }else{
+    mThumb.innerHTML = `<div class="modal-thumb-ph">${emoji}</div>`;
   }
 
-  // tech pills
-  const techs = (d.tech || '').split(',').map(t => t.trim()).filter(Boolean);
-  mTech.innerHTML = techs.map(t => `<span>${t}</span>`).join('');
+  /* tech stack */
+  const techList = tech.split(',').map(t=>t.trim()).filter(Boolean);
+  mTech.innerHTML = techList.map(t=>`<span>${t}</span>`).join('');
 
-  // footer buttons
-  let acts = '';
-  if (d.link) {
-    const label = el.getAttribute('data-link-label') || 'View on Play Store';
-    acts += `<a href="${d.link}" target="_blank" class="modal-btn-store">${label} ↗</a>`;
+  /* footer */
+  let footer = '';
+
+  if(link){
+    footer += `<a href="${link}" target="_blank" class="modal-btn-store">${linkLabel} ↗</a>`;
   }
-  acts += `<button class="modal-btn-close-foot" onclick="closeModal()">Close</button>`;
-  mFooter.innerHTML = acts;
+
+  footer += `<button class="modal-btn-close-foot" onclick="closeModal()">Close</button>`;
+
+  mFooter.innerHTML = footer;
 
   modal.classList.add('open');
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflow='hidden';
 }
 
-function closeModal() {
+function closeModal(){
   modal.classList.remove('open');
-  document.body.style.overflow = '';
+  document.body.style.overflow='';
 }
 
-// "View Details" buttons — stop propagation so card click doesn't double-fire
-document.querySelectorAll('.proj-detail-btn').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.stopPropagation();
-    const card = btn.closest('[data-title]');
-    if (card) openModal(card);
+
+/* ── CLICK CARD OPEN MODAL ── */
+document.querySelectorAll('.proj-card, .proj-featured').forEach(card=>{
+  card.addEventListener('click',()=>{
+    openModal(card);
   });
 });
 
-// clicking ANYWHERE on a card opens the modal
-document.querySelectorAll('.proj-card, .proj-featured').forEach(card => {
-  card.addEventListener('click', () => {
-    if (card.hasAttribute('data-title')) openModal(card);
-  });
+/* ── CLOSE MODAL ── */
+document.getElementById('modal-close').addEventListener('click',closeModal);
+
+modal.addEventListener('click',e=>{
+  if(e.target===modal) closeModal();
 });
 
-// close on backdrop click or Escape key
-document.getElementById('modal-close').addEventListener('click', closeModal);
-modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape') closeModal();
+});
 </script>
 </body>
 </html>
