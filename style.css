@@ -1008,19 +1008,13 @@ nav ul a.active::after {
   background: rgba(94, 234, 212, .07);
 }
 
-.b-enter {
+.b-acs {
   color: #fbbf24;
   border-color: rgba(251, 191, 36, .25);
   background: rgba(251, 191, 36, .07);
 }
 
-.b-rt {
-  color: #7dd3fc;
-  border-color: rgba(125, 211, 252, .25);
-  background: rgba(125, 211, 252, .07);
-}
-
-.b-bank {
+.b-freelance {
   color: #c4b5fd;
   border-color: rgba(196, 181, 253, .25);
   background: rgba(196, 181, 253, .07);

@@ -120,7 +120,7 @@
     <div class="sec-inner">
       <div class="sec-header reveal">
         <div class="eyebrow">Selected Work</div>
-        <h2 class="sec-h2">Apps I've <em>built</em></h2>
+        <h2 class="sec-h2">Projects I've <em>Worked On</em></h2>
       </div>
 
       <!-- FEATURED -->
@@ -193,43 +193,70 @@
           </div>
         </div>
 
-        <div class="proj-card reveal d1" data-title="Omnichat" data-badge="Real-time" data-badge-class="b-rt"
-          data-desc="Real-time omnichannel customer service platform. WebSocket-powered live messaging handles multi-agent sessions across multiple channels simultaneously. Features message queuing, read receipts, typing indicators, and agent handoff."
-          data-tech="WebSocket,Coroutines,Hilt,MVVM,OkHttp,Flow" data-emoji="💬">
+        <div class="proj-card reveal d1"
+          data-title="Saleskit BCA Finance"
+          data-badge="JARI"
+          data-badge-class="b-jari"
+          data-desc="Saleskit BCA Finance is a mobile application built to support vehicle data collection during BCA Expo events. The application allows sales teams to register vehicles, manage customer information, and record financing prospects directly from the event location. It supports offline-first functionality using Room and SQLite so data can still be collected without internet access, and automatically synchronizes to the server when a connection becomes available. Firebase is integrated for authentication, cloud data synchronization, and real-time updates to ensure reliable and efficient field operations."
+          data-tech="Kotlin,Java,Room,SQLite,Firebase,Offline First,MVVM"
+          data-emoji="🚗">
           <div class="pc-thumb">
-            <!-- <img src="assets/omnichat.jpg" alt="Omnichat"> -->
-            <div class="thumb-ph">💬</div>
-            <span class="badge b-rt">Real-time</span>
+            <img src="assets/jari_bcaf.png" alt="Jari AI">
+            <span class="badge b-jari">JARI</span>
           </div>
           <div class="pc-body">
             <span class="pc-num">03</span>
-            <h3>Omnichat</h3>
-            <p>Real-time omnichannel customer service via WebSocket. Multi-agent live sessions.</p>
-            <div class="proj-tech"><span>WebSocket</span><span>Coroutines</span><span>Hilt</span></div>
+            <h3>Saleskit BCA Finance</h3>
+            <p>
+              Mobile application used during BCA Expo events for vehicle registration
+              and financing data collection. Supports offline data entry with automatic
+              sync when internet connection becomes available.
+            </p>
+            <div class="proj-tech">
+              <span>Kotlin</span>
+              <span>Java</span>
+              <span>Room</span>
+              <span>SQLite</span>
+              <span>Firebase</span>
+            </div>
             <div class="proj-actions">
-              <a href="https://play.google.com/store/apps/details?id=your.digiroom.id" target="_blank"
-                class="proj-store-link">
-                View on Play Store ↗
+              <a href="#" target="_blank" class="proj-store-link">
+                View Project ↗
               </a>
             </div>
           </div>
         </div>
 
-        <div class="proj-card reveal d2" data-title="Jari AI" data-badge="Enterprise" data-badge-class="b-enter"
-          data-desc="AI-powered OCR enterprise solution for intelligent document recognition and classification at scale. Uses ML Kit and CameraX for real-time capture, with a custom classification pipeline and REST API integration for data extraction."
-          data-tech="ML Kit,CameraX,Koin,Retrofit,Clean Architecture,Coroutines" data-emoji="🤖">
-          <div class="pc-thumb">
-            <!-- <img src="assets/jariai.jpg" alt="Jari AI"> -->
-            <div class="thumb-ph">🤖</div>
-            <span class="badge b-enter">Enterprise</span>
+        <div class="proj-card reveal d2"
+          data-title="Mobile House Keeping"
+          data-badge="ACS"
+          data-badge-class="b-acs"
+          data-desc="Mobile House Keeping is an enterprise Android application designed to support hotel operational management, especially housekeeping activities. The app helps hotel staff manage room status, cleaning schedules, and maintenance reports efficiently through a mobile interface. Built with Kotlin and XML using modern Android architecture, the application utilizes Retrofit for API communication, Room for local database storage, and Paging 3 to efficiently load large room and task datasets. Security is implemented using encrypted preferences and secure database handling to ensure sensitive operational data remains protected."
+          data-tech="Kotlin,XML,Retrofit,Room,Paging 3,Security Pref,MVVM"
+          data-link="https://play.google.com/store/apps/details?id=com.dip.housekeeping"
+          data-link-label="View on Play Store" data-emoji="📍">
+         <div class="pc-thumb">
+            <img src="assets/acs_housekeeping.png" alt="Mobile House Keeping">
+            <span class="badge b-acs">ACS</span>
           </div>
           <div class="pc-body">
             <span class="pc-num">04</span>
-            <h3>Jari AI</h3>
-            <p>AI-powered OCR enterprise solution. Recognizes and classifies documents with ML Kit.</p>
-            <div class="proj-tech"><span>ML Kit</span><span>CameraX</span><span>Koin</span></div>
+            <h3>Mobile House Keeping</h3>
+            <p>
+              Enterprise hotel management application used by housekeeping teams
+              to manage room status, cleaning schedules, and maintenance tasks
+              efficiently through a mobile system.
+            </p>
+            <div class="proj-tech">
+              <span>Kotlin</span>
+              <span>XML</span>
+              <span>Retrofit</span>
+              <span>Room</span>
+              <span>Paging 3</span>
+            </div>
             <div class="proj-actions">
-              <a href="https://play.google.com/store/apps/details?id=your.digiroom.id" target="_blank"
+              <a href="https://play.google.com/store/apps/details?id=com.dip.housekeeping"
+                target="_blank"
                 class="proj-store-link">
                 View on Play Store ↗
               </a>
@@ -237,119 +264,224 @@
           </div>
         </div>
 
-        <div class="proj-card reveal" data-title="Jari Collection" data-badge="Enterprise" data-badge-class="b-enter"
-          data-desc="Collector management system with live GPS tracking, visit logging, and financial reporting dashboards. Features offline data collection, background location updates, route optimization, and detailed collection reports with chart visualizations."
-          data-tech="Maps SDK,Location Services,Room,Coroutines,Charts,WorkManager"
-          data-link="https://play.google.com/store/apps/details?id=id.co.jari.collection.true"
-          data-link-label="View on Play Store" data-emoji="📍">
-          <div class="pc-thumb">
-            <!-- <img src="assets/jaricollection.jpg" alt="Jari Collection"> -->
-            <div class="thumb-ph">📍</div>
-            <span class="badge b-enter">Enterprise</span>
+      <div class="proj-card reveal"
+        data-title="Omnichat"
+        data-badge="ACS"
+        data-badge-class="b-acs"
+        data-desc="Omnichat is a real-time customer communication platform that aggregates messages from multiple social media channels into a single mobile interface. Designed for customer service and support teams, the application allows agents to manage conversations from various platforms in one unified chat system. The app uses WebSocket technology for real-time message delivery, ensuring instant communication between agents and customers. Built with Kotlin and XML using MVVM architecture, it integrates Room for local message storage, Retrofit for API communication, Paging 3 for efficient message loading, and Hilt for dependency injection to maintain a scalable and maintainable codebase."
+        data-tech="Kotlin,XML,WebSocket,Room,Retrofit,MVVM,Hilt,Paging 3"
+        data-emoji="💬">
+        <div class="pc-thumb">
+          <img src="assets/acs_omnichat.png" alt="Omnichat">
+          <span class="badge b-rt">ACS</span>
+        </div>
+        <div class="pc-body">
+          <span class="pc-num">05</span>
+          <h3>Omnichat</h3>
+          <p>
+            Real-time omnichannel chat platform that collects messages from
+            multiple social media platforms into one unified customer service interface.
+          </p>
+          <div class="proj-tech">
+            <span>Kotlin</span>
+            <span>XML</span>
+            <span>WebSocket</span>
+            <span>Room</span>
+            <span>Retrofit</span>
+            <span>Paging 3</span>
           </div>
-          <div class="pc-body">
-            <span class="pc-num">05</span>
-            <h3>Jari Collection</h3>
-            <p>Collector management with live GPS tracking and financial reporting dashboards.</p>
-            <div class="proj-tech"><span>Maps SDK</span><span>Location</span><span>Room</span></div>
-            <div class="proj-actions">
-              <a href="https://play.google.com/store/apps/details?id=your.digiroom.id" target="_blank"
-                class="proj-store-link">
-                View on Play Store ↗
-              </a>
-            </div>
+          <div class="proj-actions">
+            <a href="#"
+              target="_blank"
+              class="proj-store-link">
+              View Project ↗
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="proj-card reveal d1" data-title="Bankaltimtara SMS" data-badge="Banking" data-badge-class="b-bank"
-          data-desc="Secure SMS banking application for Bankaltimtara. Supports fund transfers, balance inquiries, and account mutation history. Implements biometric authentication, encrypted local storage, and SMS OTP verification for high-security transactions."
-          data-tech="Android,Biometric Auth,EncryptedSharedPrefs,SMS API,Security" data-emoji="🏦">
-          <div class="pc-thumb">
-            <!-- <img src="assets/bankaltim.jpg" alt="Bankaltimtara"> -->
-            <div class="thumb-ph">🏦</div>
-            <span class="badge b-bank">Banking</span>
+      <div class="proj-card reveal d1"
+        data-title="SMS Bankaltimtara"
+        data-badge="ACS"
+        data-badge-class="b-acs"
+        data-desc="SMS Bankaltimtara is a secure mobile banking support application designed to handle SMS-based transaction services such as fund transfers, balance inquiries, and account information requests. The application acts as an SMS broadcast gateway that processes and distributes banking transaction messages reliably. Built using Kotlin and Java with MVP architecture, the system integrates Room for local transaction storage, Hilt for dependency injection, and multiple security layers including root detection, encrypted preferences, and secure database storage to protect sensitive financial data."
+        data-tech="Kotlin,Java,MVP,Hilt,Room,Security,Encrypted Prefs"
+        data-link="https://play.google.com/store/apps/details?id=com.acs.appletkaltim.smsappletbankkaltimtara"
+        data-link-label="View on Play Store" data-emoji="📍">        
+        <div class="pc-thumb">
+          <img src="assets/acs_kaltimtara.png" alt="SMS Bankaltimtara">
+          <span class="badge b-acs">ACS</span>
+        </div>
+        <div class="pc-body">
+          <span class="pc-num">06</span>
+          <h3>SMS Bankaltimtara</h3>
+          <p>
+            Secure SMS broadcast system used for banking transaction services
+            such as transfers, balance inquiries, and account information requests.
+          </p>
+          <div class="proj-tech">
+            <span>Kotlin</span>
+            <span>Java</span>
+            <span>MVP</span>
+            <span>Hilt</span>
+            <span>Room</span>
+            <span>Security</span>
           </div>
-          <div class="pc-body">
-            <span class="pc-num">06</span>
-            <h3>Bankaltimtara SMS</h3>
-            <p>Secure SMS banking for fund transfers, balance inquiries and account mutations.</p>
-            <div class="proj-tech"><span>Android</span><span>Security</span><span>Biometric</span></div>
-            <div class="proj-actions">
-              <a href="https://play.google.com/store/apps/details?id=your.digiroom.id" target="_blank"
-                class="proj-store-link">
-                View on Play Store ↗
-              </a>
-            </div>
+          <div class="proj-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.acs.appletkaltim.smsappletbankkaltimtara"
+              target="_blank"
+              class="proj-store-link">
+              View on Play Store ↗
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="proj-card reveal d2" data-title="Mobile Payslip" data-badge="Enterprise" data-badge-class="b-enter"
-          data-desc="Full-featured employee management application with payroll processing, PDF payslip export, leave request management, and attendance tracking. Integrates with company HR backend via REST API with role-based access control."
-          data-tech="Kotlin,Retrofit,Room,PDF Export,MVVM,Hilt,WorkManager" data-emoji="💼">
-          <div class="pc-thumb">
-            <!-- <img src="assets/payslip.jpg" alt="Mobile Payslip"> -->
-            <div class="thumb-ph">💼</div>
-            <span class="badge b-enter">Enterprise</span>
+      <div class="proj-card reveal d2"
+        data-title="Mobile Payslip"
+        data-badge="Freelance"
+        data-badge-class="b-freelance"
+        data-desc="Mobile Payslip is an enterprise HR application designed to give employees easy access to their payroll information directly from their mobile devices. The app allows users to securely view and download monthly payslips, track salary history, and access basic employment information. Built using Kotlin and Java with modern Android architecture, the application integrates with the company's HR backend through REST APIs using Retrofit. Hilt is used for dependency injection to maintain scalable architecture and improve maintainability, ensuring a secure and reliable payroll access experience for employees."
+        data-tech="Kotlin,Java,Retrofit,Hilt,MVVM,REST API"
+        data-link="https://play.google.com/store/apps/details?id=id.co.toyota.mytmmin"
+        data-link-label="View on Play Store" data-emoji="📍">                
+        <div class="pc-thumb">
+          <img src="assets/payslip.png" alt="Mobile Payslip">
+          <span class="badge b-freelance">Freelance</span>
+        </div>
+        <div class="pc-body">
+          <span class="pc-num">07</span>
+          <h3>Mobile Payslip</h3>
+          <p>
+            Enterprise HR application that allows employees to securely access
+            payroll information and view monthly payslips directly from mobile devices.
+          </p>
+          <div class="proj-tech">
+            <span>Kotlin</span>
+            <span>Java</span>
+            <span>Retrofit</span>
+            <span>Hilt</span>
+            <span>REST API</span>
           </div>
-          <div class="pc-body">
-            <span class="pc-num">07</span>
-            <h3>Mobile Payslip</h3>
-            <p>Employee management with payroll processing, PDF export and leave management.</p>
-            <div class="proj-tech"><span>Kotlin</span><span>Retrofit</span><span>PDF Export</span></div>
-            <div class="proj-actions">
-              <a href="https://play.google.com/store/apps/details?id=your.digiroom.id" target="_blank"
-                class="proj-store-link">
-                View on Play Store ↗
-              </a>
-            </div>
+          <div class="proj-actions">
+            <a href="https://play.google.com/store/apps/details?id=id.co.toyota.mytmmin"
+              target="_blank"
+              class="proj-store-link">
+              View on Play Store ↗
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="proj-card reveal" data-title="Saleskit BCA Finance" data-badge="Enterprise"
-          data-badge-class="b-enter"
-          data-desc="Enterprise sales support platform for BCA Finance field agents. Offline-first architecture with WorkManager background sync, product catalog browsing, customer submission forms, and real-time status tracking for loan applications."
-          data-tech="WorkManager,Room,Retrofit,Clean Architecture,MVVM,Hilt" data-emoji="📊">
-          <div class="pc-thumb">
-            <!-- <img src="assets/saleskit.jpg" alt="Saleskit BCA"> -->
-            <div class="thumb-ph">📊</div>
-            <span class="badge b-enter">Enterprise</span>
+      <div class="proj-card reveal"
+        data-title="Digiroom"
+        data-badge="Freelance"
+        data-badge-class="b-freelance"
+        data-desc="Digiroom is a mobile application designed to simplify automotive services such as purchasing car spare parts and booking vehicle service appointments. Users can browse spare parts catalogs, place orders, and schedule service visits directly through the app. Built with Kotlin and Jetpack Compose using MVVM architecture, the application uses a modular project structure for scalability, Room for local data storage, Koin for dependency injection, and Firebase for backend services including authentication and analytics."
+        data-tech="Kotlin,Jetpack Compose,MVVM,Room,Koin,Modular,Firebase"
+        data-link="https://play.google.com/store/apps/details?id=id.co.astra.ai.dev1"
+        data-link-label="View on Play Store" data-emoji="📍">         
+        <div class="pc-thumb">
+          <img src="assets/digiroom.png" alt="Digiroom">
+          <span class="badge b-freelance">Freelance</span>
+        </div>
+        <div class="pc-body">
+          <span class="pc-num">08</span>
+          <h3>Digiroom</h3>
+          <p>
+             Automotive service app for purchasing spare parts and booking
+             vehicle service appointments through a mobile platform.
+          </p>
+          <div class="proj-tech">
+            <span>Kotlin</span>
+            <span>Jetpack Compose</span>
+            <span>Room</span>
+            <span>Koin</span>
+            <span>Firebase</span>
           </div>
-          <div class="pc-body">
-            <span class="pc-num">08</span>
-            <h3>Saleskit BCA Finance</h3>
-            <p>Enterprise sales support for financial services. Offline-first with background sync.</p>
-            <div class="proj-tech"><span>WorkManager</span><span>Room</span><span>Clean Arch</span></div>
-            <div class="proj-actions">
-              <a href="https://play.google.com/store/apps/details?id=your.digiroom.id" target="_blank"
-                class="proj-store-link">
-                View on Play Store ↗
-              </a>
-            </div>
+          <div class="proj-actions">
+            <a href="https://play.google.com/store/apps/details?id=id.co.astra.ai.dev1"
+              target="_blank"
+              class="proj-store-link">
+              View on Play Store ↗
+            </a>
           </div>
         </div>
+      </div>
 
-        <div class="proj-card reveal d1" data-title="Dip House Keeping" data-badge="Enterprise"
-          data-badge-class="b-enter"
-          data-desc="Hotel housekeeping and reservation management system fully integrated with PMS and POS. Features real-time room status updates, task assignment for housekeeping staff, Bluetooth thermal printing for receipts, and guest management."
-          data-tech="Android,POS Integration,Bluetooth,Retrofit,Room,MVVM" data-emoji="🏨">
-          <div class="pc-thumb">
-            <!-- <img src="assets/housekeeping.jpg" alt="Dip House Keeping"> -->
-            <div class="thumb-ph">🏨</div>
-            <span class="badge b-enter">Enterprise</span>
+      <div class="proj-card reveal d1"
+        data-title="TribunX"
+        data-badge="Freelance"
+        data-badge-class="b-freelance"
+        data-desc="TribunX is a modern digital news platform that delivers articles, videos, and interactive content to users in real time. The application allows users to read news, watch video reports, post comments, and manage personalized content subscriptions. It also supports KOL (Key Opinion Leader) content management and user engagement features. Built using Kotlin Multiplatform with a modern MVVM architecture, the app leverages Jetpack Compose for UI, Koin for dependency injection, and multiple security layers to ensure safe content access and user data protection."
+        data-tech="Kotlin Multiplatform,Compose,MVVM,Koin,Security,Media Streaming"
+        data-link="https://play.google.com/store/apps/details?id=mobile.android.tribun"
+        data-link-label="View on Play Store" data-emoji="📍">          
+        <div class="pc-thumb">
+          <img src="assets/tribunx.png" alt="Digiroom">
+          <span class="badge b-freelance">Freelance</span>
+        </div>
+        <div class="pc-body">
+          <span class="pc-num">09</span>
+          <h3>TribunX</h3>
+          <p>
+            Digital news platform with articles, videos, comments, and
+            subscription features built using Kotlin Multiplatform.
+          </p>
+          <div class="proj-tech">
+            <span>Kotlin Multiplatform</span>
+            <span>Compose</span>
+            <span>MVVM</span>
+            <span>Koin</span>
+            <span>Security</span>
           </div>
-          <div class="pc-body">
-            <span class="pc-num">09</span>
-            <h3>Dip House Keeping</h3>
-            <p>Hotel reservation system with PMS &amp; POS integration. Bluetooth printing support.</p>
-            <div class="proj-tech"><span>Android</span><span>POS Integration</span><span>Bluetooth</span></div>
-            <div class="proj-actions">
-              <a href="https://play.google.com/store/apps/details?id=your.digiroom.id" target="_blank"
-                class="proj-store-link">
-                View on Play Store ↗
-              </a>
-            </div>
+          <div class="proj-actions">
+            <a href="https://play.google.com/store/apps/details?id=mobile.android.tribun"
+              target="_blank"
+              class="proj-store-link">
+              View Project ↗
+            </a>
           </div>
         </div>
+      </div>
+
+      <div class="proj-card reveal d1"
+        data-title="BCA Life"
+        data-badge="Freelance"
+        data-badge-class="b-freelance"
+        data-desc="BCA Life is a mobile insurance management application that allows users to manage insurance policies, submit claims, and track claim status directly from their mobile devices. The application simplifies insurance services such as policy information access, claim submissions, document uploads, and real-time claim tracking. Built with Kotlin and Jetpack Compose using MVVM architecture, the app integrates Ktor for network communication, Room for local data storage, and multiple security layers to ensure safe handling of sensitive insurance data."
+        data-tech="Kotlin,Jetpack Compose,MVVM,Koin,Ktor,Room,Security"
+        data-link="https://play.google.com/store/apps/details?id=com.bcalife.now"
+        data-link-label="View on Play Store"
+        data-emoji="🛡️">
+        <div class="pc-thumb">
+          <img src="assets/bcal.png" alt="BCA Life">
+          <span class="badge b-freelance">Freelance</span>
+        </div>
+        <div class="pc-body">
+          <span class="pc-num">10</span>
+          <h3>BCA Life</h3>
+          <p>
+            Mobile insurance management app for policy access, claim submission,
+            and real-time claim tracking.
+          </p>
+          <div class="proj-tech">
+            <span>Kotlin</span>
+            <span>Compose</span>
+            <span>MVVM</span>
+            <span>Koin</span>
+            <span>Ktor</span>
+            <span>Room</span>
+          </div>
+          <div class="proj-actions">
+            <a href="https://play.google.com/store/apps/details?id=com.bcalife.now"
+              target="_blank"
+              class="proj-store-link">
+              View on Play Store ↗
+            </a>
+          </div>
+        </div>
+      </div>
 
       </div>
     </div>
@@ -370,7 +502,7 @@
             <span>🏗 Clean Architecture</span>
             <span>🔗 KMP Specialist</span>
             <span>⚡ CI/CD</span>
-            <span>📍 Jakarta, Indonesia</span>
+            <span>📍 Sukabumi, Indonesia</span>
             <span>🌍 Open to Remote</span>
           </div>
         </div>
@@ -380,20 +512,20 @@
               <div class="tl-dot"></div>
               <div class="tl-year">2023 — Present</div>
               <div class="tl-role">Senior Android Developer</div>
-              <div class="tl-org">Full-time · Jakarta</div>
-              <div class="tl-chips"><span>KMP</span><span>Compose</span><span>Hilt</span><span>CI/CD</span></div>
+              <div class="tl-org">Full-time · PT. Jari Solusi International</div>
+              <div class="tl-chips"><span>KMP</span><span>Compose</span><span>Security</span><span>CI/CD</span></div>
             </div>
             <div class="tl-item">
               <div class="tl-dot"></div>
-              <div class="tl-year">2021 — 2023</div>
+              <div class="tl-year">2022 — 2023</div>
               <div class="tl-role">Android Developer</div>
-              <div class="tl-org">Contract · Multiple Clients</div>
+              <div class="tl-org">Contract · PT. Akses Cipta Solusi</div>
               <div class="tl-chips"><span>Kotlin</span><span>MVVM</span><span>Firebase</span></div>
             </div>
             <div class="tl-item">
               <div class="tl-dot"></div>
-              <div class="tl-year">2020 — 2021</div>
-              <div class="tl-role">Junior Android Developer</div>
+              <div class="tl-year">2021 — 2020</div>
+              <div class="tl-role">Freelance Android Developer</div>
               <div class="tl-org">Entry Level</div>
               <div class="tl-chips"><span>Kotlin</span><span>Android SDK</span></div>
             </div>
@@ -420,8 +552,8 @@
                     d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z" />
                 </svg>
               </div>
-              <div><span>Email</span><strong><span class="__cf_email__"
-                    data-cfemail="1f6f7e6c7c7e737e7b766b767e5f78727e7673317c7072">[email&#160;protected]</span></strong>
+              <div><span>Email</span><strong><span class="__cf_email__" style="color: white;"
+                    data-cfemail="1f6f7e6c7c7e737e7b766b767e5f78727e7673317c7072">pascaladitia@gmail.com</span></strong>
               </div>
             </a>
             <a href="https://github.com/pascaladitia" target="_blank" class="c-link">
@@ -466,7 +598,7 @@
   <!-- ── FOOTER ── -->
   <footer>
     <div class="foot-inner">
-      <span class="foot-logo">Pascal<em>.</em></span>
+      <span class="foot-logo">Pascal Aditia Muclis<em>.</em></span>
       <span class="foot-copy">© 2026 Pascal Aditia Muclis · Senior Android &amp; KMP Developer</span>
       <button class="foot-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Top</button>
     </div>
